@@ -1,6 +1,49 @@
+@import "~bootstrap/scss/bootstrap";
+
 $primary-color: white;
-$bg: black;
-h1 {
-  color: $primary-color;
-  background-color: $bg;
+$green: #42A62A;
+$green-footer: #016330;
+$gray: #F7F7F7;
+
+h1, h2, h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tituls {
+  padding-top: 70px;
+  height: 600px;
+  background-color: $green;
+
+  h3 {
+    color: $primary-color;
+  }
+}
+
+.form {
+  padding-top: 80px;
+  height: 760px;
+
+}
+
+.subscription {
+  padding: 100px;
+  background-color: $green;
+  height: 600px;  
+
+  &__form {
+    padding: 80px 100px;
+    height: 280px;
+    background-color: $primary-color;
+  }
+
+  h3 {
+    color: $primary-color;
+  }
+}
+
+footer {
+  background-color: $green-footer;
+  height: 100px;
+  width: 100%;
 }
