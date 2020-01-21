@@ -5,6 +5,13 @@ $green: #42A62A;
 $green-footer: #016330;
 $gray: #F7F7F7;
 
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
 h1, h2, h3 {
   text-align: center;
   text-transform: uppercase;
@@ -15,7 +22,29 @@ h1, h2, h3 {
   height: 600px;
   background-color: $green;
 
-  h3 {
+  &__title {
+    padding-bottom: 40px;
+    font-size: 52px;
+    color: $primary-color;
+    text : {
+      transform: uppercase;
+      align: center;
+    }
+  }
+
+  &__description {
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 20px;
+    color: $primary-color;
+  }
+
+  h4 {
+    text : {
+      transform: uppercase;
+      align: center;
+    }
+    font-size: 22px;
     color: $primary-color;
   }
 }
@@ -28,8 +57,9 @@ h1, h2, h3 {
 
 .subscription {
   padding: 100px;
-  background-color: $green;
-  height: 600px;  
+  background: url(./assets/images/background-subscription.jpg) no-repeat center center fixed;
+  @include background-size(cover);
+  height: 600px;
 
   &__form {
     padding: 80px 100px;
