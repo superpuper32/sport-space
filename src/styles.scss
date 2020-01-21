@@ -17,6 +17,18 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+.article {
+  margin: 70px 0;
+  
+  &__content {
+    padding: 40px 0;
+    border : {
+      top: 1px solid #CDCDCD;
+      bottom: 1px solid #CDCDCD;
+    }
+  }
+}
+
 .tituls {
   padding-top: 70px;
   height: 600px;
