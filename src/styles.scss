@@ -17,6 +17,46 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+.steps {
+  background-color: #F1EFF0;
+
+  &__img {
+    width: 100%;
+    height: 160px;
+    @include background-size(cover);
+
+    &_reg {
+      background: url(./assets/images/reg_icon.svg) no-repeat center center;
+    }
+
+    &_head {
+      background: url(./assets/images/head_icon.svg) no-repeat center center;
+    }
+
+    &_field {
+      background: url(./assets/images/field_icon.svg) no-repeat center center;
+    }
+
+    &_takepart {
+      background: url(./assets/images/takepart_icon.svg) no-repeat center center;
+    }
+
+    &_cup {
+      background: url(./assets/images/cup_icon.png) no-repeat center center;
+    }
+
+    &_trophy {
+      background: url(./assets/images/trophy_icon.svg) no-repeat center center;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    padding-bottom: 120px;
+    text-align: center;
+  }
+}
+
 .title__main {
   padding-top: 80px;
   padding-bottom: 40px;
@@ -27,7 +67,7 @@ h1, h2, h3 {
   }
 }
 
-.btn__schedule {
+.btn__large {
   margin: 100px auto 0;
   padding: 20px 100px;
   border-color: #42A62A;
