@@ -17,14 +17,25 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
-.schedule {
-  &__btn {
-    margin-top: 100px;
-    border-color: #42A62A;
-    background-color: #42A62A;
-    color: $primary-color;
-    border-radius: 0em;
+.title__main {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-size: 52px;
+  text : {
+    transform: uppercase;
+    align: center;
   }
+}
+
+.btn__schedule {
+  margin: 100px auto 0;
+  padding: 20px 100px;
+  border-color: #42A62A;
+  background-color: #42A62A;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $primary-color;
+  border-radius: 0em;
 }
 
 .article {
