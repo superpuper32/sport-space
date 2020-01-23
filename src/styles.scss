@@ -12,9 +12,27 @@ $gray: #F7F7F7;
   background-size: $size;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1, h2, h3 {
   text-align: center;
   text-transform: uppercase;
+}
+
+.welcome {
+  padding-top: 100px;
+  &__title {
+    padding-bottom: 40px;
+    font-size: 52px;
+    text-align: center;
+  }
+  &__content {
+  padding-bottom: 150px;
+  text-align: center;
+  font-size: 22px;
+  }
 }
 
 .steps {
