@@ -4,6 +4,7 @@ $primary-color: white;
 $green: #42A62A;
 $green-footer: #016330;
 $gray: #F7F7F7;
+$yellow: #DFDB00;
 
 @mixin background-size($size) {
   -webkit-background-size: $size;
@@ -21,15 +22,57 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+.main {
+  padding-top: 200px;
+  padding-bottom: 180px;
+  background-repeat: no-repeat;
+  @include background-size(cover);
+  background-position: center;
+  background-color: $gray;
+
+  &__title {
+    padding-bottom: 40px;
+    font-size: 54px;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  &__content {
+    padding-bottom: 120px;
+    font-size: 36px;
+    color: $primary-color;
+    text-align: center;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 24px 60px;
+    background-color: $yellow;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #000;
+  }
+  
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
 .welcome {
   padding-top: 100px;
+  padding-bottom: 150px;
+  background: url(./assets/images/background_welcome.png) no-repeat center center;
+  @include background-size(cover);
   &__title {
     padding-bottom: 40px;
     font-size: 52px;
     text-align: center;
   }
   &__content {
-  padding-bottom: 150px;
   text-align: center;
   font-size: 22px;
   }
