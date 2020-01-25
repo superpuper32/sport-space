@@ -15,12 +15,54 @@ $yellow: #DFDB00;
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
 }
 
 h1, h2, h3 {
   text-align: center;
   text-transform: uppercase;
 }
+
+  .header {
+    
+    &__main {
+      padding: 20px 0;
+      background: url(./assets/images/background-subscription.jpg) no-repeat center center;
+      @include background-size(cover);
+
+      ul {
+        margin-bottom: 0;
+        display: inline-block;
+      }
+      
+      li {
+        display: inline-block;
+        padding-left: 40px;
+
+        a {
+          color: $primary-color;
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 1.4;
+        }
+      }
+
+      form {
+        margin-right: 90px;
+        display: inline-block;
+        float: right;
+        color: $gray;
+      }
+    }
+
+    &__form {
+      margin: 20px 100px 30px;
+    }
+
+    &__logo {
+      cursor: pointer;
+    }
+  }
 
 .main {
   padding-top: 200px;
