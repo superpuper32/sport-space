@@ -5,30 +5,38 @@
         <meta charset="utf-8">
     <link rel="stylesheet" href="/src.e31bb0bc.css"></head>
     <body>
-        <header> 
-            <div class="header-main">
-                <ul class="header-main__links">
-                    <li class="header-main__link"><a href="/">О нас</a></li>
-                    <li class="header-main__link"><a href="/">Команды</a></li>
-                    <li class="header-main__link"><a href="/">Подбор тренера</a></li>
-                    <li class="header-main__link"><a href="/">Площадки</a></li>
-                    <li class="header-main__link"><a href="/">Турниры</a></li>
-                    <li class="header-main__link"><a href="/">Контакты</a></li>
-                </ul>
+        <header class="header">
+            <div class="header__nav">
+                <div class="nav">
+                    <ul class="nav__links">
+                        <li class="nav__link"><a href="/">О нас</a></li>
+                        <li class="nav__link"><a href="/">Команды</a></li>
+                        <li class="nav__link"><a href="/">Подбор тренера</a></li>
+                        <li class="nav__link"><a href="/">Площадки</a></li>
+                        <li class="nav__link"><a href="/">Турниры</a></li>
+                        <li class="nav__link"><a href="/">Контакты</a></li>
+                    </ul>
 
-                <form class="header-main__form">
-                    <input type="text" value="Вид спорта" name="sport_cat">
-                </form>
+                    <form class="nav__form">
+                        <input class="nav__input" type="text" placeholder="Вид спорта" name="sport_cat">
+                    </form>
+                </div>
             </div>
 
-            <div class="header-form">
-                <a class="header-form__logo">
+            <div class="header__login">
+                <a class="header__login__logo">
                     <img src="/logo_main.babbaf01.png" alt="logo">
                 </a>
 
-                <form class="header-form__inputs">
-                    <input type="email" class="header-form__input" id="email" placeholder="Email">
-                    <input type="password" class="header-form__input" id="email" placeholder="Пароль">
+                <form class="header__login__inputs">
+                    <input type="email" class="form__header" id="email" placeholder="Email">
+                    <input type="password" class="form__header" id="email" placeholder="Пароль">
+                    <div class="btn btn__primary">
+                        Войти
+                    </div>
+                    <div class="btn btn__reg">
+                        Регистрация
+                    </div>
                 </form>
             </div>
         </header>
@@ -90,73 +98,58 @@
 
         <div class="welcome">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10">
-                        <div class="welcome__title">
-                            Добро пожаловать на сайт спортивного портала
-                        </div>
-                    </div>
+                <div class="welcome__title">
+                    Добро пожаловать на сайт спортивного портала
                 </div>
 
-                <div class="row">
-                    <div class="col">
-                        <div class="welcome__content">
-                            Система автоматического подбора ближайшего к вам спортивного зада или комплекса, 
-                            вы сами бронируете время и место тренировки, посмотреть отзывы и фотографии зала, 
-                            создавать команды для игр или вступать в уже существующие. Вы можете быстро найти тренера 
-                            и забронировать время тренировки в удобном для вас зале.
-                        </div>
-                    </div>
+                <div class="welcome__content">
+                    Система автоматического подбора ближайшего к вам спортивного зада или комплекса, 
+                    вы сами бронируете время и место тренировки, посмотреть отзывы и фотографии зала, 
+                    создавать команды для игр или вступать в уже существующие. Вы можете быстро найти тренера 
+                    и забронировать время тренировки в удобном для вас зале.
                 </div>
             </div>
         </div>
 
         <div class="steps">
             <div class="container">
-                <div class="title__main">
+                <div class="title__main title__main_dark">
                     Как стать участником?
                 </div>
 
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-md-2">
-                        <div class="steps__img steps__img_reg"></div>
-                        <div class="steps__title">
+                        <div class="step__img step__img_reg"></div>
+                        <div class="step__title">
                             Регистрируйся
                         </div>
                     </div>
 
                     <div class="col-md-2">
-                        <div class="steps__img steps__img_head"></div>
-                        <div class="steps__title">
+                        <div class="step__img step__img_head"></div>
+                        <div class="step__title">
                             Заходи в свой кабинет
                         </div>
                     </div>
 
                     <div class="col-md-2">
-                        <div class="steps__img steps__img_field"></div>
-                        <div class="steps__title">
+                        <div class="step__img step__img_field"></div>
+                        <div class="step__title">
                             Выбирай турнир
                         </div>
                     </div>
 
                     <div class="col-md-2">
-                        <div class="steps__img steps__img_takepart"></div>
-                        <div class="steps__title">
+                        <div class="step__img step__img_takepart"></div>
+                        <div class="step__title">
                             Участвуй
                         </div>
                     </div>
 
                     <div class="col-md-2">
-                        <div class="steps__img steps__img_cup"></div>
-                        <div class="steps__title">
+                        <div class="step__img step__img_cup"></div>
+                        <div class="step__title">
                             Отмечай победу
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <div class="steps__img steps__img_head"></div>
-                        <div class="steps__title">
-                            Собирай трофеи
                         </div>
                     </div>
                 </div>
@@ -165,8 +158,24 @@
 
         <div class="news">
             <div class="container">
-                <div class="title__main">
+                <div class="title__main title__main_dark">
                     Новости спорта
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="/news_01.1986cbe1.jpg" class="card-img-top" alt="news-post">
+                        <div class="card-body">
+                            <h5 class="card-title">Прошел турнир по волейболу среди женских команд юго-востока Московской области</h5>
+                            <p class="card-text">Прошел турнир по волейболу среди женских команд юго-востока Московской области. 
+                                Прошел турнир по волейболу среди женских команд юго-востока Московской области.
+                                Прошел турнир по волейболу среди женских команд юго-востока Московской области.
+                                Прошел турнир по волейболу среди женских команд юго-востока Московской области.
+                                Прошел турнир по волейболу среди женских команд юго-востока Московской области.
+                                Прошел турнир по волейболу среди женских команд юго-востока Московской области</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">
@@ -177,7 +186,7 @@
 
         <div class="schedule">
             <div class="container">
-                <div class="title__main">
+                <div class="title__main title__main_dark">
                     Турниры и соревнования
                 </div>
 
@@ -318,7 +327,7 @@
         </article>
 
         <div class="tituls">
-            <div class="tituls__title">
+            <div class="tituls__title title__main_light">
                 "Покажи себя"
             </div>
 
@@ -362,7 +371,9 @@
         </div>
 
         <div class="form">
-            <h3>Отправить сообщение</h3>
+            <div class="title__main title__main_dark">
+                Отправить сообщение
+            </div>
 
             <div class="container">
                 <div class="row justify-content-center">
@@ -379,7 +390,9 @@
         </div>
 
         <div class="subscription">
-            <h3>Будь в курсе</h3>
+            <div class="title__main title__main_light">
+                Будь в курсе
+            </div>
 
             <div class="container subscription__form">
                 <div class="row">

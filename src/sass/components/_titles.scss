@@ -1,0 +1,16 @@
+.title__main {
+    padding-bottom: 40px;
+    font-size: 52px;
+    text : {
+      transform: uppercase;
+      align: center;
+    }
+
+    &_dark {
+        color: $font-dark;
+    }
+
+    &_light {
+        color: $primary-color;
+    }
+  }

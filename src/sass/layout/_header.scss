@@ -1,0 +1,23 @@
+@import "./../components/forms";
+@import "./../components/navs";
+
+.header {
+    &__nav {
+        padding: 14px 90px;
+        background: url(./assets/images/header_nav.jpg) no-repeat center center;
+        @include background-size(cover);
+      }
+    &__login {
+        display: flex;
+        margin: 20px 90px 30px 100px;
+        justify-content: space-between;
+        background-color: $white;
+        &__logo {
+            cursor: pointer;
+          }
+        &__inputs {
+        display: inline-block;
+        margin: auto 0;
+      }
+    }
+}

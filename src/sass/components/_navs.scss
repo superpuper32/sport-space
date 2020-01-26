@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__links {
+        margin: auto 0;
+    }
+    &__link {
+        display: inline-block;
+        padding-left: 40px;
+        &:first-child {
+            padding-left: 0;
+        }
+        a {
+            color: $primary-color;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.4;
+            text-decoration: none;
+        }
+    }
+    &__form {
+        display: inline-block;
+        color: $gray;
+    }
+    &__input {
+        padding: 4px 10px;
+        color: #A4A4A4;
+        font-size: 1rem;
+        border: 1px solid #E0F0E6;
+    }
+}
