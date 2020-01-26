@@ -1,0 +1,47 @@
+.card-news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 40px;
+    min-width: 0;
+    max-width: 560px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    color: #000;
+
+    &:hover {
+        outline: none;
+        text-decoration: none;
+        color: #000;
+        box-shadow: 0 0 15px $green-footer;
+    }
+
+    &__image {
+        flex-shrink: 0;
+        padding: 16px;
+        width: 100%;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        min-height: 1px;
+    }
+
+    &__title {
+        padding: 0 1rem 2.5rem;
+        font-size: 1.25rem;
+    }
+
+    &__hr {
+        margin-top: 0;
+        margin-bottom: 0;
+        border: 3px solid $green;
+    }
+
+    &__content {
+        padding: 1.25rem 1rem 1.875rem;
+        font-size: 12px;
+        color: #BDBDBD;
+    }
+}
