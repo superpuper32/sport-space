@@ -53,19 +53,6 @@ h1, h2, h3 {
       text-decoration: none;
     }
   }
-  
-  &__anchor {
-    display: inline-block;
-    padding: 24px 60px;
-    background-color: $yellow;
-    font-size: 26px;
-    text-transform: uppercase;
-    color: #000;
-
-    &:hover {
-      color: #000;
-    }
-  }
 
   &__numeral {
     color: $primary-color;
@@ -77,8 +64,6 @@ h1, h2, h3 {
     text-transform: uppercase;
   }
 }
-
-
 
 .article {
   margin: 70px 0;
@@ -95,7 +80,7 @@ h1, h2, h3 {
 .tituls {
   padding-top: 70px;
   height: 600px;
-  background-color: $green;
+  background-color: $primary-green;
 
   &__title {
     padding-bottom: 40px;

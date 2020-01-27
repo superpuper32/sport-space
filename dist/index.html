@@ -29,9 +29,10 @@
                 </a>
 
                 <form class="header__login__inputs">
-                    <input type="email" class="form__header" id="email" placeholder="Email">
-                    <input type="password" class="form__header" id="email" placeholder="Пароль">
-                    <div class="btn btn__primary">
+                    <input type="email" class="form__header" id="header__email" placeholder="Email">
+                    <input type="password" class="form__header" id="header__password" name="password" placeholder="Пароль" autocomplete="off" required="">
+                    
+                    <div class="btn btn__form">
                         Войти
                     </div>
                     <div class="btn btn__reg">
@@ -61,7 +62,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="main__btn">
-                                <a href="/" class="main__anchor">Принять участие</a>
+                                <a href="/" class="btn__main-block">Принять участие</a>
                             </div>
                         </div>
                     </div>
@@ -163,8 +164,9 @@
                 </div>
             </div>
 
-            <div class="row news__cards">
+            <div class="news__cards">
                 <a href="/" class="card-news">
+                    <div class="card-news__date">15.02.2020</div>
                     <img src="/news_01.1986cbe1.jpg" class="card-news__image" alt="volley">
 
                     <div class="card-news__body">
@@ -174,10 +176,12 @@
                         Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere numquam id non. Quo, ratione? Illo, modi culpa sit magnam laboriosam cumque?
                         Deleniti placeat cumque laborum distinctio aperiam odit maxime error necessitatibus minus maiores dolorum sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque quaerat placeat, quas quibusdam facilis vero.</div>
                     </div>
+                    <div class="card-news__triangle"></div>
                 </a>
 
                 <a href="/" class="card-news">
-                    <img src="/news_01.1986cbe1.jpg" class="card-news__image" alt="volley">
+                    <div class="card-news__date">15.02.2020</div>
+                    <img src="/news_02.248935e4.jpg" class="card-news__image" alt="volley">
 
                     <div class="card-news__body">
                         <h5 class="card-news__title">Прошел турнир по волейболу среди женских команд юго-востока Московской области</h5>
@@ -186,10 +190,12 @@
                         Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere numquam id non. Quo, ratione? Illo, modi culpa sit magnam laboriosam cumque?
                         Deleniti placeat cumque laborum distinctio aperiam odit maxime error necessitatibus minus maiores dolorum sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque quaerat placeat, quas quibusdam facilis vero.</div>
                     </div>
+                    <div class="card-news__triangle"></div>
                 </a>
 
                 <a href="/" class="card-news">
-                    <img src="/news_01.1986cbe1.jpg" class="card-news__image" alt="volley">
+                    <div class="card-news__date">15.02.2020</div>
+                    <img src="/news_03.b8c1136f.jpg" class="card-news__image" alt="volley">
 
                     <div class="card-news__body">
                         <h5 class="card-news__title">Прошел турнир по волейболу среди женских команд юго-востока Московской области</h5>
@@ -198,12 +204,13 @@
                         Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere numquam id non. Quo, ratione? Illo, modi culpa sit magnam laboriosam cumque?
                         Deleniti placeat cumque laborum distinctio aperiam odit maxime error necessitatibus minus maiores dolorum sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque quaerat placeat, quas quibusdam facilis vero.</div>
                     </div>
+                    <div class="card-news__triangle"></div>
                 </a>
             </div>
 
             <div class="container">
                 <div class="row">
-                    <button type="button" class="btn btn__large">Показать все</button>
+                    <button type="button" class="btn btn__primary">Показать все</button>
                 </div>
             </div>
         </div>
@@ -241,94 +248,13 @@
                                 </ul>
                               </div>
                             </div>
-
-                            <div class="panel panel-default">
-                              <div class="panel-heading">
-                                <a data-toggle="collapse" href="#collapse1" class="" aria-expanded="true">
-                                  <ul class="list-group cart-news">
-                                    <li class="list-group-item text-left">
-                                      <h6 style="word-wrap: break-word;">
-                                        <i class=" text-dark fa fa-calendar-check-o ml-auto" aria-hidden="true"></i> ЛИГА А МУЖЧИНЫ ЛЮБИТЕЛЬСКАЯ ВОЛЕЙБОЛЬНАЯ ЛИГА ЮГО-ВОСТОКА МО</h6>
-                                      <div class="text-left text-dark">
-                                        открытие
-                                        турнира: 01  октября 00:00</div>
-                                    </li>
-                                  </ul>
-                                </a>
-                              </div>
-                              <div id="collapse1" class="panel-collapse collapse show">
-                                <ul class="list-group">
-                                </ul>
-                              </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                              <div class="panel-heading">
-                                <a data-toggle="collapse" href="#collapse2" class="" aria-expanded="true">
-                                  <ul class="list-group cart-news">
-                                    <li class="list-group-item text-left">
-                                      <h6 style="word-wrap: break-word;">
-                                        <i class=" text-dark fa fa-calendar-check-o ml-auto" aria-hidden="true"></i> ЛИГА Б МУЖЧИНЫ ЛЮБИТЕЛЬСКАЯ ВОЛЕЙБОЛЬНАЯ ЛИГА ЮГО-ВОСТОКА МО</h6>
-                                      <div class="text-left text-dark">
-                                        открытие
-                                        турнира: 01  октября 00:00</div>
-                                    </li>
-                                  </ul>
-                                </a>
-                              </div>
-                              <div id="collapse2" class="panel-collapse collapse show">
-                                <ul class="list-group">
-                                </ul>
-                              </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                              <div class="panel-heading">
-                                <a data-toggle="collapse" href="#collapse3" class="" aria-expanded="true">
-                                  <ul class="list-group cart-news">
-                                    <li class="list-group-item text-left">
-                                      <h6 style="word-wrap: break-word;">
-                                        <i class=" text-dark fa fa-calendar-check-o ml-auto" aria-hidden="true"></i> Лига Чайников</h6>
-                                      <div class="text-left text-dark">
-                                        открытие
-                                        турнира: 05  октября 16:00</div>
-                                    </li>
-                                  </ul>
-                                </a>
-                              </div>
-                              <div id="collapse3" class="panel-collapse collapse show">
-                                <ul class="list-group">
-                                </ul>
-                              </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                              <div class="panel-heading">
-                                <a data-toggle="collapse" href="#collapse4" class="" aria-expanded="true">
-                                  <ul class="list-group cart-news">
-                                    <li class="list-group-item text-left">
-                                      <h6 style="word-wrap: break-word;">
-                                        <i class=" text-dark fa fa-calendar-check-o ml-auto" aria-hidden="true"></i> MIX ЛЮБИТЕЛЬСКАЯ ВОЛЕЙБОЛЬНАЯ ЛИГА ЮГО-ВОСТОКА МО</h6>
-                                      <div class="text-left text-dark">
-                                        открытие
-                                        турнира: 27  октября 10:00</div>
-                                    </li>
-                                  </ul>
-                                </a>
-                              </div>
-                              <div id="collapse4" class="panel-collapse collapse show">
-                                <ul class="list-group">
-                                </ul>
-                              </div>
-                            </div>
                         </div>
-
                     </div>
                 </div>
+            </div>
                 
-                <div class="row">
-                    <button type="button" class="btn btn__large">Показать все</button>
-                </div>
+            <div class="row schedule__btn">
+                <button type="button" class="btn btn__primary">Показать все</button>
             </div>
         </div>
 
@@ -408,7 +334,7 @@
                 </div>
 
                 <div class="row">
-                    <button type="button" class="btn btn__large">Отправить</button>
+                    <button type="button" class="btn btn__primary">Отправить</button>
                 </div>
             </div>
         </div>

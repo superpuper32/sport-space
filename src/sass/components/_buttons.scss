@@ -1,5 +1,5 @@
 .btn {
-  &__primary {
+  &__form {
     padding: 14px 30px;
     background-color: $primary;
     border-radius: 0;
@@ -16,11 +16,23 @@
     padding: 16px 30px;
     font-size: 18px;
   }
-  &__large {
-    margin: 100px auto 0;
+  &__main-block {
+    display: inline-block;
+    padding: 24px 60px;
+    background-color: $yellow;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #000;
+
+    &:hover {
+      color: #000;
+    }
+  }
+  &__primary {
+    margin: 0 auto ;
     padding: 20px 100px;
-    border-color: #42A62A;
-    background-color: #42A62A;
+    border-color: $primary-green;
+    background-color: $primary-green;
     font-size: 20px;
     text-transform: uppercase;
     color: $primary-color;
