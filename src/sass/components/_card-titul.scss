@@ -1,0 +1,34 @@
+.card-titul {
+    min-height: 13.75rem;
+    color: $white;
+    text-align: center;
+    line-height: 1;
+
+    &__image {
+        width: 100%;
+        height: 10rem;
+        @include background-size(cover);
+        &_arena {
+            background: url(./assets/images/arena.svg) no-repeat center center;
+        }
+        &_coach {
+            background: url(./assets/images/coach.svg) no-repeat center center;
+        }
+        &_teams {
+            background: url(./assets/images/teams.svg) no-repeat center center;
+        }
+        &_medal {
+            background: url(./assets/images/medal.svg) no-repeat center center;
+        }
+    }
+
+    &__title {
+        padding-bottom: 1.25rem;
+        font-size: 1.375rem;
+        text-transform: uppercase;
+    }
+
+    &__content {
+        font-size: 0.75rem;
+    }
+}

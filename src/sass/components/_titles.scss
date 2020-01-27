@@ -1,15 +1,13 @@
 .title__main {
-    padding-bottom: 40px;
-    font-size: 52px;
+    padding-bottom: 3.125rem;
+    font-size: 3.25rem;
     text : {
       transform: uppercase;
       align: center;
     }
-
     &_dark {
         color: $font-dark;
     }
-
     &_light {
         color: $primary-color;
     }
