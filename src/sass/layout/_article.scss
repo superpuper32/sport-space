@@ -1,0 +1,15 @@
+.article {
+    padding: 5.625rem 0;
+    background: url(./assets/images/background_article.jpg) no-repeat center center;
+    @include background-size(cover);
+    
+    &__content {
+      padding: 3.125rem 0;
+      font-size: 1.25rem;
+      text-align: center;
+      border : {
+        top: 2px solid #CDCDCD;
+        bottom: 2px solid #CDCDCD;
+      }
+    }
+}
