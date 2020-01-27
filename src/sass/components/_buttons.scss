@@ -1,29 +1,29 @@
 .btn {
+  border-radius: 0;
+  text-transform: uppercase;
   &__form {
     padding: 14px 30px;
     background-color: $primary;
-    border-radius: 0;
     border: 2px solid $primary;
     letter-spacing: 0.02em;
+    text-transform: none;
     color: $primary-color;
     font-size: 18px;
-
     &:hover {
-      color: $yellow;
+      color: $primary-green;
     }
-  }
-  &__reg {
-    padding: 16px 30px;
-    font-size: 18px;
+    &_reg {
+      color: $black;
+      background-color: $white;
+      border-color: $white;
+    }
   }
   &__main-block {
     display: inline-block;
     padding: 24px 60px;
     background-color: $yellow;
     font-size: 26px;
-    text-transform: uppercase;
     color: #000;
-
     &:hover {
       color: #000;
     }
@@ -34,8 +34,21 @@
     border-color: $primary-green;
     background-color: $primary-green;
     font-size: 20px;
-    text-transform: uppercase;
     color: $primary-color;
     border-radius: 0em;
+  }
+  &__tab {
+    margin: 0 1rem;
+    padding: 1rem 2rem;
+    min-width: 260px;
+    background-color: #F0F0F0;
+    font-size: 18px;
+    line-height: 1;
+    color: $primary;
+    
+    &_active {
+      background-color: $primary;
+      color: $white;
+    }
   }
 }
