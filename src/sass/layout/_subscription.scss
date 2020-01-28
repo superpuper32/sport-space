@@ -1,0 +1,14 @@
+.subscription {
+    padding: 100px;
+    background: url(./assets/images/background-subscription.jpg) no-repeat center center fixed;
+    @include background-size(cover);
+  
+    &__form {
+      padding: 5rem 6.25rem;
+      background-color: $white;
+    }
+
+    &__description {
+        font-size: 1.25rem;
+    }
+  }

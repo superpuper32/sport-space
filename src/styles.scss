@@ -17,6 +17,7 @@
 @import "sass/layout/article";
 @import "sass/layout/tituls";
 @import "sass/layout/message";
+@import "sass/layout/subscription";
 @import "sass/layout/footer";
 
 body {
@@ -68,22 +69,5 @@ h1, h2, h3 {
   &__scores {
     font-size: 40px;
     text-transform: uppercase;
-  }
-}
-
-.subscription {
-  padding: 100px;
-  background: url(./assets/images/background-subscription.jpg) no-repeat center center fixed;
-  @include background-size(cover);
-  height: 600px;
-
-  &__form {
-    padding: 80px 100px;
-    height: 280px;
-    background-color: $primary-color;
-  }
-
-  h3 {
-    color: $primary-color;
   }
 }
