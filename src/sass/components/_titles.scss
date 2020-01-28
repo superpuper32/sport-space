@@ -1,4 +1,5 @@
-.title__main {
+.title {
+  &__main {
     padding-bottom: 3.125rem;
     font-size: 3.25rem;
     text : {
@@ -9,6 +10,15 @@
         color: $font-dark;
     }
     &_light {
-        color: $primary-color;
+        color: $white;
     }
   }
+  &__description {
+    text-align: center;
+    font-size: 1.25rem;
+    color: $white;
+    &_dark {
+      color: $font-dark;
+    }
+  }
+}

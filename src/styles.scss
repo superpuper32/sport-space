@@ -16,6 +16,7 @@
 @import "sass/layout/schedule";
 @import "sass/layout/article";
 @import "sass/layout/tituls";
+@import "sass/layout/message";
 @import "sass/layout/footer";
 
 body {
@@ -68,12 +69,6 @@ h1, h2, h3 {
     font-size: 40px;
     text-transform: uppercase;
   }
-}
-
-.form {
-  padding-top: 80px;
-  height: 760px;
-
 }
 
 .subscription {
