@@ -9,13 +9,14 @@
     text-transform: none;
     color: $primary-color;
     font-size: 18px;
+
+    @media (max-width: 980px) {
+      display: none;
+    }
     &:hover {
       color: $primary-green;
     }
 
-    @media (min-width: 320px) {
-      display: none;
-    }
 
     &_reg {
       color: $black;
@@ -29,6 +30,7 @@
     background-color: $yellow;
     font-size: 26px;
     color: #000;
+
     &:hover {
       color: #000;
     }
@@ -41,7 +43,8 @@
     font-size: 1.25rem;
     color: $primary-color;
     border-radius: 0em;
-    @media (min-width: 320px) {
+
+    @media (min-width: 320px) and (max-width: 768px) {
       font-size: 1.5rem;
     }
   }
@@ -54,7 +57,7 @@
     line-height: 1;
     color: $primary;
 
-    @media (min-width: 320px) {
+    @media (min-width: 320px) and (max-width: 768px) {
       font-size: 1.25rem;
     }
     

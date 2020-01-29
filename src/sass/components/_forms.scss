@@ -18,7 +18,7 @@
       box-shadow: 0 0 5px $green-footer;
     }
 
-    @media (min-width: 414px) {
+    @media (min-width: 320px) and (max-width: 980px) {
       display: none;
     }
   }

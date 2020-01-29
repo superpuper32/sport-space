@@ -2,16 +2,27 @@
 @import "./../components/navs";
 
 .header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -62px;
+    z-index: 2;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+
     &__nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
         padding: 14px 90px;
         background: url(./assets/images/header_nav.jpg) no-repeat center center;
+        z-index: -1;
         @include background-size(cover);
       }
     &__login {
         display: flex;
-        margin: 20px 90px 30px 100px;
+        padding: 20px 90px 30px 100px;
         justify-content: space-between;
         background-color: $white;
+        
         &__logo {
             cursor: pointer;
           }
