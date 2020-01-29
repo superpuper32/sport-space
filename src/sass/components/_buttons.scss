@@ -12,6 +12,11 @@
     &:hover {
       color: $primary-green;
     }
+
+    @media (min-width: 414px) {
+      display: none;
+    }
+
     &_reg {
       color: $black;
       background-color: $white;

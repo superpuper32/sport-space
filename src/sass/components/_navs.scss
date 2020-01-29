@@ -5,12 +5,18 @@
     &__links {
         margin: auto 0;
     }
+
     &__link {
         display: inline-block;
         padding-left: 40px;
         &:first-child {
             padding-left: 0;
         }
+
+        @media (min-width: 414px) {
+            display: none;
+          }
+
         a {
             color: $primary-color;
             font-size: 1rem;

@@ -17,6 +17,10 @@
       outline: none;
       box-shadow: 0 0 5px $green-footer;
     }
+
+    @media (min-width: 414px) {
+      display: none;
+    }
   }
   &__message {
     margin: 4.375rem auto 5rem;
