@@ -1,15 +1,28 @@
 .card {
     &__schedule {
         border-color: #CDCDCD;
+        
+        @media (min-width: 320px) {
+            margin-bottom: 1rem;
+            border-width: 2px;
+        }
     }
 
     &__body {
         padding: 14px 1.25rem;
         min-height: 6.25rem;
+
+        @media (min-width: 320px) {
+            font-size: 1.5rem;
+        }
     }
 
     &__title {
         font-size: 1rem;
         color: $primary-green;
+
+        @media (min-width: 320px) {
+            font-size: 2rem;
+        }
     }
 }

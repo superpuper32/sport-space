@@ -12,6 +12,9 @@
     &_light {
         color: $white;
     }
+    @media (min-width: 420px) {
+      letter-spacing: -0.04em;
+    }
   }
   &__description {
     text-align: center;
@@ -19,6 +22,10 @@
     color: $white;
     &_dark {
       color: $font-dark;
+    }
+    @media (min-width: 320px) {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
     }
   }
 }

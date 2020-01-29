@@ -10,6 +10,10 @@
     background-clip: border-box;
     color: #000;
 
+    @media (min-width: 320px) {
+        max-width: 100%;
+    }
+
     &:hover {
         outline: none;
         text-decoration: none;
@@ -23,9 +27,14 @@
         right: 2rem;
         padding: 14px 26px 10px;
         background-color: $primary-green;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 1;
         color: $primary-color;
+
+        @media (min-width: 320px) {
+            padding: 20px 32px 14px;
+            font-size: 1.75rem;
+        }
     }
 
     &__image {
@@ -42,6 +51,10 @@
     &__title {
         padding: 0 1rem 2.5rem;
         font-size: 1.25rem;
+
+        @media (min-width: 320px) {
+            font-size: 2.25rem;
+        }
     }
 
     &__hr {
@@ -52,8 +65,12 @@
 
     &__content {
         padding: 1.25rem 1rem 1.875rem;
-        font-size: 12px;
+        font-size: .75rem;
         color: #BDBDBD;
+
+        @media (min-width: 320px) {
+            font-size: 1.25rem;
+        }
     }
 
     &__triangle {

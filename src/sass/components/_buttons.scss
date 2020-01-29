@@ -13,7 +13,7 @@
       color: $primary-green;
     }
 
-    @media (min-width: 414px) {
+    @media (min-width: 320px) {
       display: none;
     }
 
@@ -38,18 +38,25 @@
     padding: 20px 100px;
     border-color: $primary-green;
     background-color: $primary-green;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: $primary-color;
     border-radius: 0em;
+    @media (min-width: 320px) {
+      font-size: 1.5rem;
+    }
   }
   &__tab {
     margin: 0 1rem;
     padding: 1rem 2rem;
     min-width: 260px;
     background-color: #F0F0F0;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1;
     color: $primary;
+
+    @media (min-width: 320px) {
+      font-size: 1.25rem;
+    }
     
     &_active {
       background-color: $primary;
