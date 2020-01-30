@@ -3,11 +3,12 @@
     <head>
         <title>🏐Sport space</title>
         <meta charset="utf-8">
+        <script src="index.js" defer></script>
     </head>
     <body>
         <header class="header">
             <div class="header__nav">
-                <div class="nav">
+                <nav class="nav">
                     <ul class="nav__links">
                         <li class="nav__link"><a href="/">О нас</a></li>
                         <li class="nav__link"><a href="/">Команды</a></li>
@@ -16,11 +17,11 @@
                         <li class="nav__link"><a href="/">Турниры</a></li>
                         <li class="nav__link"><a href="/">Контакты</a></li>
                     </ul>
-
-                    <form class="nav__form">
-                        <input class="nav__input" type="text" placeholder="Вид спорта" name="sport_cat">
-                    </form>
-                </div>
+                </nav>
+                
+                <form class="nav__form">
+                    <input class="nav__input" type="text" placeholder="Вид спорта" name="sport_cat">
+                </form>
             </div>
 
             <div class="header__login">
@@ -395,13 +396,13 @@
 
             <div class="container subscription__form">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12 col-lg-6">
                         <div class="subscription__description">
                             Подписавайся на нашу рассылку и ты всегда будешь знать, где проходят соревнования, сборы и многое другое
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
+                    <div class="col-md-12 col-lg-6 my-auto">
+                        <div class="subscription__input">
                             <input type="text" class="form__header" placeholder="Введите email">
                             <button class="btn btn__form">Подписаться</button>
                         </div>
@@ -411,11 +412,28 @@
 
         </div>
 
-        <footer>
+        <footer class="footer">
             <a href="/" class="header__login__logo">
                 <img src="./assets/images/logo_transparent.png" alt="logo">
             </a>
+
+            <div class="footer__payments">
+                <img src="./assets/images/maestro.png" alt="maestro">
+                <img src="./assets/images/master-card.png" alt="master-card">
+                <img src="./assets/images/visa.png" alt="visa">
+                <img src="./assets/images/alfa.png" alt="alfa">
+            </div>
+
+            <div class="footer__social">
+                <div class="social">
+                    <div class="social__icon"></div>
+                    <div class="social__icon"></div>
+                    <div class="social__icon"></div>
+                    <div class="social__icon"></div>
+                    <div class="social__icon"></div>
+                </div>
+                &copy; 2020 Все права защищены.
+            </div>
         </footer>
-        <script src="index.js"></script>
     </body>
 </html>

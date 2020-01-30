@@ -11,4 +11,10 @@
     &__description {
         font-size: 1.25rem;
     }
+
+    &__input {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
   }

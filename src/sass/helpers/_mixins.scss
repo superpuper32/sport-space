@@ -1,6 +1,14 @@
 @mixin background-size($size) {
     -webkit-background-size: $size;
-    -moz-background-size: $size;
-    -o-background-size: $size;
-    background-size: $size;
+       -moz-background-size: $size;
+         -o-background-size: $size;
+            background-size: $size;
+  }
+
+  @mixin position($sticky) {
+    -webkit-position: $sticky;
+       -moz-position: $sticky;
+        -ms-position: $sticky;
+         -o-position: $sticky;
+            position: $sticky;
   }
