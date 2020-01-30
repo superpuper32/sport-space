@@ -10,9 +10,11 @@
     vertical-align: middle;
     color: $green-footer;
     opacity: 2;
+
     &::placeholder {
       color: #B7B7B7;
     }
+
     &:focus {
       outline: none;
       box-shadow: 0 0 5px $green-footer;
@@ -22,6 +24,7 @@
       display: none;
     }
   }
+
   &__message {
     margin: 4.375rem auto 5rem;
   }
