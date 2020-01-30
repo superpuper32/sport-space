@@ -36,7 +36,7 @@
                     <div class="btn btn__form">
                         Войти
                     </div>
-                    <div class="btn btn__form_reg">
+                    <div class="btn btn__blank">
                         Регистрация
                     </div>
                 </form>
@@ -377,13 +377,19 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="form__message">
-                        <input class="form__header" type="text" placeholder="Укажите Ваше имя">
-                        <input class="form__header" type="text" placeholder="Укажите email">
+                <div class="row justify-content-center">
+                    <div class="col-md-5 pr-2">
+                        <input type="text" class="form__input" placeholder="Укажите Ваше имя">
                     </div>
-                </div>
+                    <div class="col-md-5 pl-2">
+                        <input type="text" class="form__input" placeholder="Укажите email">
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" class="form__input form__input_height" placeholder="Текст вашего сообщения">
+                    </div>
 
+                </div>
+                
                 <div class="row">
                     <button type="button" class="btn btn__primary">Отправить</button>
                 </div>
@@ -397,15 +403,15 @@
 
             <div class="container subscription__form">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6">
+                    <div class="col-sm-12 col-lg-6">
                         <div class="subscription__description">
                             Подписавайся на нашу рассылку и ты всегда будешь знать, где проходят соревнования, сборы и многое другое
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg-6 my-auto">
+                    <div class="col-sm-12 col-lg-6 my-auto">
                         <div class="subscription__input">
-                            <input type="text" class="form__header" placeholder="Введите email">
-                            <button class="btn btn__form">Подписаться</button>
+                            <input type="text" class="form__subscription" placeholder="Введите email">
+                            <button class="btn btn__input">Подписаться</button>
                         </div>
                     </div>
                 </div>

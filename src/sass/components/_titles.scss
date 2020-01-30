@@ -2,29 +2,37 @@
   &__main {
     padding-bottom: 3.125rem;
     font-size: 3.25rem;
+    
     text : {
       transform: uppercase;
       align: center;
     }
+
     &_dark {
         color: $font-dark;
     }
+
     &_light {
         color: $white;
     }
-    @media (min-width: 420px) {
+
+    @media (min-width: 320px) and (max-width: 960px) {
       letter-spacing: -0.04em;
     }
   }
+
   &__description {
     text-align: center;
     font-size: 1.25rem;
     color: $white;
+    margin-bottom: 50px;
+
     &_dark {
       color: $font-dark;
     }
-    @media (min-width: 320px) {
-      margin-bottom: 1rem;
+
+    @media (min-width: 320px) and (max-width: 960px) {
+      margin-bottom: 16px;
       font-size: 1.5rem;
     }
   }

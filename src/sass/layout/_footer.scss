@@ -1,9 +1,14 @@
 .footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 1.25rem 5rem 1rem;
     background-color: $green-footer;
     width: 100%;
+
+    @media (min-width: 320px) and (max-width: 980px) {
+      flex-direction: column;
+    }
 
     &__payments {
       display: inline-block;

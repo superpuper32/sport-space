@@ -25,7 +25,44 @@
     }
   }
 
-  &__message {
-    margin: 4.375rem auto 5rem;
+  &__subscription {
+    padding: 14px 24px;
+    width: 100%;
+    border: 2px solid #F5F5F5;
+    background-color: #F5F5F5;
+    font-size: 1rem;
+    vertical-align: middle;
+    color: $green-footer;
+
+    &:focus {
+      outline: none;
+    }
   }
+
+  &__input {
+    margin-bottom: 30px;
+    padding: 14px 24px;
+    width: 100%;
+    border: 2px solid #E6E6E6;
+    background-color: #F5F5F5;
+    font-size: 18px;
+    vertical-align: middle;
+    color: $green-footer;
+    opacity: 2;
+
+    &::placeholder {
+      color: #B7B7B7;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &_height{
+      height: 160px;
+      vertical-align: top;
+      margin-bottom: 60px;
+    }
+  }
+
 }
