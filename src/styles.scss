@@ -10,6 +10,8 @@
 @import "sass/components/card-titul";
 @import "sass/components/social";
 
+@import "sass/components/tournaments-nav";
+
 @import "sass/layout/header";
 @import "sass/layout/welcome";
 @import "sass/layout/steps";
@@ -36,7 +38,7 @@ h1, h2, h3 {
   @include background-size(cover);
   background-position: center;
   background-color: $gray;
-  color: $primary-color;
+  color: $white;
 
   &__background {
     padding-top: 200px;
@@ -62,7 +64,7 @@ h1, h2, h3 {
   }
 
   &__numeral {
-    color: $primary-color;
+    color: $white;
     font-size: 70px;
   }
 

@@ -5,7 +5,7 @@
 
   &:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,.3);
-    color: $primary-color;
+    color: $white;
   }
 
   &__form {
@@ -14,7 +14,7 @@
     border: 2px solid $primary;
     letter-spacing: 0.02em;
     text-transform: none;
-    color: $primary-color;
+    color: $white;
     font-size: 18px;
     
     @media (max-width: 980px) {
@@ -68,7 +68,7 @@
     border-color: $primary-green;
     background-color: $primary-green;
     font-size: 1.25rem;
-    color: $primary-color;
+    color: $white;
     border-radius: 0em;
 
     @media (min-width: 320px) and (max-width: 768px) {

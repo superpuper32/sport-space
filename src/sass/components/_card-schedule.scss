@@ -24,7 +24,16 @@
         }
     }
 
+    &__icon {
+        display: inline-block;
+        width: .875rem;
+        height: 1rem;
+        background: url(./assets/images/schedule_icon.svg) no-repeat center center;
+        background-size: cover;
+    }
+
     &__title {
+        display: inline-block;
         font-size: 1rem;
         color: $primary-green;
 
