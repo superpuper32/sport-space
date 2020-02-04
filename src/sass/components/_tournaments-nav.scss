@@ -3,12 +3,17 @@
     &__nav {
         padding: 0 90px;
         background-color: $green;
+
+        ul {
+            padding-left: 0;
+        }
     }
 
     &__links {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        
     }
 
     &__link {

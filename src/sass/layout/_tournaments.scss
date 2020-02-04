@@ -1,0 +1,40 @@
+.tournaments {
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 50px 90px;
+    }
+
+    &__aside {
+        min-width: 260px;
+        padding: 20px 30px;
+        border: 2px solid $green-light;
+        background-color: $white;
+    }
+
+    &__title {
+        text-align: left;
+        font-size: 1.25rem;
+        color: $primary;
+        font-weight: 500;
+    }
+
+    &__content {
+        padding: 0 30px;
+        background-color: #ffffff;
+
+        p {
+            padding-bottom: 40px;
+            font-size: 1.375rem;
+            text-align: left;
+            color: $primary;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+    }
+}

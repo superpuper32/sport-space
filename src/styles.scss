@@ -23,6 +23,8 @@
 @import "sass/layout/subscription";
 @import "sass/layout/footer";
 
+@import "sass/layout/tournaments";
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -37,7 +39,7 @@ h1, h2, h3 {
   background-repeat: no-repeat;
   @include background-size(cover);
   background-position: center;
-  background-color: $gray;
+  // background-color: $gray;
   color: $white;
 
   &__background {
