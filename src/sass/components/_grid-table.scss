@@ -1,0 +1,27 @@
+.grid-table {
+
+    &__row {
+        display: grid;
+        grid-template-columns: 30% repeat(5, 1fr);
+        grid-column-gap: .25rem;
+
+        &_header {
+            div {
+                background-color: $gray;
+                color: $primary;
+            }
+        }
+
+        &_body {
+            div {
+                padding: 2rem 0;
+                color: $green-light;
+            }
+        }
+    }
+
+    &__cell {
+        font-style: .75rem;
+        padding: 1rem 0;
+    }
+}
