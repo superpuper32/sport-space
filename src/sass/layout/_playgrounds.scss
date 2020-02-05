@@ -11,12 +11,19 @@
         padding-top: 40px;
     }
 
-    &__map {
-        padding-top: 35px;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 
     &__search {
         display: flex;
         justify-content: flex-start;
+        
+    }
+
+    &__map {
+        padding-top: 35px;
     }
 }

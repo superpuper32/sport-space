@@ -108,7 +108,7 @@
   }
 
   &__search {
-    width: 45px;
+    width: 53px;
     height: 53px;
     padding: 0;
     border: 2px solid #E6E6E6;
@@ -119,9 +119,36 @@
     &:hover {
       box-shadow: none;
     }
+  }
 
-    &:focus {
-      outline: none;
+  &__toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__tool {
+    padding-top: 14px;
+    width: 53px;
+    height: 53px;
+    border: 1px solid $white;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: $green-light;
+
+    &:hover {
+      box-shadow: none;
+      transition: all .3s ease;
+    }
+
+    &_active {
+      background-color: $primary-green;
+      color: $white;
+
+      &:hover {
+        color: $black;
+        
+      }
     }
   }
 }
