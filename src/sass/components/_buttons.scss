@@ -106,4 +106,22 @@
       }
     }
   }
+
+  &__search {
+    width: 45px;
+    height: 53px;
+    padding: 0;
+    border: 2px solid #E6E6E6;
+    background-color: #F5F5F5;
+    vertical-align: middle;
+    background: url('./assets/images/search-icon.png') no-repeat center center;
+
+    &:hover {
+      box-shadow: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

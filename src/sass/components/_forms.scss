@@ -65,4 +65,25 @@
     }
   }
 
+  &__search {
+    margin: 0;
+    padding: 14px 20px;
+    width: 276px;
+    border: 2px solid #E6E6E6;
+    border-right: none;
+    background-color: #F5F5F5;
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: middle;
+    color: $green;
+    opacity: 2;
+
+    &::placeholder {
+      color: #B7B7B7;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
