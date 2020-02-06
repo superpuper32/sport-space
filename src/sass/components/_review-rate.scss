@@ -1,0 +1,21 @@
+.review-rate {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 8px;
+
+    &__star {
+        width: 16px;
+        height: 15px;
+        margin-right: 6px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-image: url('./assets/images/review-star.svg');
+        opacity: .3;
+
+        &_fill {
+            background-image: url('./assets/images/review-star-fill.svg');
+            opacity: 1;
+        }
+    }
+}
