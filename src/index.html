@@ -386,13 +386,13 @@
 
                 <div class="row justify-content-center">
                     <div class="col-md-5 pr-2">
-                        <input type="text" class="form__input" placeholder="Укажите Ваше имя">
+                        <input class="form__input" type="text" name="message-name" placeholder="Укажите Ваше имя">
                     </div>
                     <div class="col-md-5 pl-2">
-                        <input type="text" class="form__input" placeholder="Укажите email">
+                        <input class="form__input" type="email" name="message-email" placeholder="Укажите email">
                     </div>
                     <div class="col-md-10">
-                        <input type="text" class="form__input form__input_height" placeholder="Текст вашего сообщения">
+                        <textarea class="form__input form__textarea" id="message-textarea" name="message-textarea" rows="5" cols="40" placeholder="Текст вашего сообщения"></textarea>
                     </div>
 
                 </div>
@@ -417,7 +417,7 @@
                     </div>
                     <div class="col-sm-12 col-lg-6 my-auto">
                         <div class="subscription__input">
-                            <input type="text" class="form__subscription" placeholder="Введите email">
+                            <input class="form__subscription" type="email" name="subscription-email" id="subscription-email" placeholder="Введите email">
                             <button class="btn btn__input">Подписаться</button>
                         </div>
                     </div>

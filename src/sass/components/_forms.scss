@@ -47,7 +47,7 @@
     background-color: #F5F5F5;
     font-size: 18px;
     vertical-align: middle;
-    color: $green;
+    // color: #B7B7B7;
     opacity: 2;
 
     &::placeholder {
@@ -57,12 +57,10 @@
     &:focus {
       outline: none;
     }
+  }
 
-    &_height{
-      height: 160px;
-      vertical-align: top;
-      margin-bottom: 60px;
-    }
+  &__textarea {
+    margin-bottom: 60px;
   }
 
   &__search {
