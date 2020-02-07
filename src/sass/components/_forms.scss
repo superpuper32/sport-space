@@ -3,10 +3,10 @@
     margin-top: 0;
     margin-right: 30px;
     padding: 14px 24px;
-    width: 276px;
+    width: 362px;
     border: 2px solid #E6E6E6;
     background-color: #F5F5F5;
-    font-size: 18px;
+    font-size: 1.125rem;
     vertical-align: middle;
     color: $green;
     opacity: 2;
@@ -20,7 +20,14 @@
       box-shadow: 0 0 5px $green;
     }
 
-    @media (min-width: 320px) and (max-width: 980px) {
+    @media (max-width: 1920px) {
+      margin-right: 20px;
+      padding: 10px 20px;
+      width: 272px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 980px) {
       display: none;
     }
   }
