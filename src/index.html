@@ -20,7 +20,12 @@
                 </nav>
                 
                 <form class="nav__form">
-                    <input class="nav__input" type="text" placeholder="Вид спорта" name="sport_cat">
+                    <input class="nav__input" type="text" list="sports" placeholder="Вид спорта" name="sport_cat" value="">
+
+                    <datalist id="sports">
+                        <option value="Все виды">Все виды</option>
+                        <option value="Волейбол">Волейбол</option>
+                    </datalist>
                 </form>
             </div>
 
