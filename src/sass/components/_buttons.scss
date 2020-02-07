@@ -60,18 +60,6 @@
     }
   }
 
-  &__main-block {
-    display: inline-block;
-    padding: 24px 60px;
-    background-color: $yellow;
-    font-size: 26px;
-    color: #000;
-
-    &:hover {
-      color: #000;
-    }
-  }
-
   &__primary {
     margin: 0 auto ;
     padding: 20px 100px;
