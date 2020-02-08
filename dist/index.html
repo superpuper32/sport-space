@@ -13,29 +13,35 @@
                         <li class="nav__link"><a href="/">О нас</a></li>
                         <li class="nav__link"><a href="/">Команды</a></li>
                         <li class="nav__link"><a href="/">Подбор тренера</a></li>
-                        <li class="nav__link"><a href="/">Площадки</a></li>
+                        <li class="nav__link"><a href="/playgrounds.html">Площадки</a></li>
                         <li class="nav__link"><a href="/tournaments.html">Турниры</a></li>
                         <li class="nav__link"><a href="/">Контакты</a></li>
                     </ul>
                 </nav>
                 
                 <form class="nav__form">
-                    <input class="nav__input" type="text" placeholder="Вид спорта" name="sport_cat">
+                    <input class="nav__input" type="text" list="sports" placeholder="Вид спорта" name="sport_cat" value="">
+
+                    <datalist id="sports">
+                        <option value="Все виды">Все виды</option>
+                        <option value="Волейбол">Волейбол</option>
+                    </datalist>
                 </form>
             </div>
 
             <div class="header__login">
-                <a href="/" class="header__login__logo">
+                <a href="/" class="header__logo">
                     <img src="/logo_main.babbaf01.png" alt="logo">
                 </a>
 
-                <form class="header__login__inputs">
+                <form class="header__inputs">
                     <input type="email" class="form__header" id="header__email" placeholder="Email">
                     <input type="password" class="form__header" id="header__password" name="password" placeholder="Пароль" autocomplete="off" required="">
                     
                     <div class="btn btn__form">
                         Войти
                     </div>
+
                     <div class="btn btn__blank">
                         Регистрация
                     </div>
@@ -49,7 +55,9 @@
                     <div class="container">
                         <div class="row">
                             <div class="main__title">
-                                Любые игровые виды спорта в вашем районе на большом спортивном портале SportsSpace.ru
+                                <h1>
+                                    Любые игровые виды спорта в вашем районе на большом спортивном портале SportsSpace.ru
+                                </h1>
                             </div>
                         </div>
         
@@ -176,27 +184,35 @@
                 </div>
             </section>
 
-            <section class="news">
+            <article class="news">
                 <div class="container">
                     <div class="title__main title__main_dark">
                         Новости спорта
                     </div>
                 </div>
 
-                <div class="news__cards">
-                    <a href="/" class="card-news">
+                <section class="news__cards">
+                    <article class="card-news">
                         <div class="card-news__date">15.02.2020</div>
-                        <img src="/news_01.1986cbe1.jpg" class="card-news__image" alt="volley">
+
+                        <img class="card-news__image" src="/news_01.1986cbe1.jpg" alt="volley">
 
                         <div class="card-news__body">
-                            <h5 class="card-news__title">Прошел турнир по волейболу среди женских команд юго-востока Московской области</h5>
+                            <h5 class="card-news__title">
+                                Прошел турнир по волейболу среди женских команд юго-востока Московской области
+                            </h5>
+
                             <hr class="card-news__hr">
-                            <div class="card-news__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus provident reprehenderit voluptatibus nulla ipsa enim assumenda voluptatum vero modi? Assumenda, fugit. Pariatur neque, debitis quas laudantium at doloribus veniam.
-                            Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere numquam id non. Quo, ratione? Illo, modi culpa sit magnam laboriosam cumque?
-                            Deleniti placeat cumque laborum distinctio aperiam odit maxime error necessitatibus minus maiores dolorum sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque quaerat placeat, quas quibusdam facilis vero.</div>
+
+                            <p class="card-news__content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus provident reprehenderit voluptatibus nulla ipsa enim assumenda voluptatum vero modi? Assumenda, fugit. Pariatur neque, debitis quas laudantium at doloribus veniam.
+                                Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere numquam id non. Quo, ratione? Illo, modi culpa sit magnam laboriosam cumque?
+                                Deleniti placeat cumque laborum distinctio aperiam odit maxime error necessitatibus minus maiores dolorum sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque quaerat placeat, quas quibusdam facilis vero.
+                            </p>
                         </div>
+
                         <div class="card-news__triangle"></div>
-                    </a>
+                    </article>
 
                     <a href="/" class="card-news">
                         <div class="card-news__date">15.02.2020</div>
@@ -225,14 +241,14 @@
                         </div>
                         <div class="card-news__triangle"></div>
                     </a>
-                </div>
+                </section>
 
                 <div class="container">
                     <div class="row">
                         <button type="button" class="btn btn__primary">Показать все</button>
                     </div>
                 </div>
-            </section>
+            </article>
 
             <section class="schedule">
                 <div class="container">
@@ -381,13 +397,13 @@
 
                 <div class="row justify-content-center">
                     <div class="col-md-5 pr-2">
-                        <input type="text" class="form__input" placeholder="Укажите Ваше имя">
+                        <input class="form__input" type="text" name="message-name" placeholder="Укажите Ваше имя">
                     </div>
                     <div class="col-md-5 pl-2">
-                        <input type="text" class="form__input" placeholder="Укажите email">
+                        <input class="form__input" type="email" name="message-email" placeholder="Укажите email">
                     </div>
                     <div class="col-md-10">
-                        <input type="text" class="form__input form__input_height" placeholder="Текст вашего сообщения">
+                        <textarea class="form__input form__textarea" id="message-textarea" name="message-textarea" rows="5" cols="40" placeholder="Текст вашего сообщения"></textarea>
                     </div>
 
                 </div>
@@ -412,7 +428,7 @@
                     </div>
                     <div class="col-sm-12 col-lg-6 my-auto">
                         <div class="subscription__input">
-                            <input type="text" class="form__subscription" placeholder="Введите email">
+                            <input class="form__subscription" type="email" name="subscription-email" id="subscription-email" placeholder="Введите email">
                             <button class="btn btn__input">Подписаться</button>
                         </div>
                     </div>
