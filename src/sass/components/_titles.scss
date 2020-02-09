@@ -2,38 +2,38 @@
   &__main {
     padding-bottom: 3.125rem;
     font-size: 3.25rem;
-    
+    letter-spacing: -0.04em;
     text : {
       transform: uppercase;
       align: center;
     }
 
-    &_dark {
-        color: $font-dark;
+    @media (min-width: 576px) {
+      font-size: 2.5rem;
     }
-
-    &_light {
-        color: $white;
-    }
-
-    @media (min-width: 320px) and (max-width: 960px) {
-      letter-spacing: -0.04em;
-    }
-  }
-
-  &__description {
-    text-align: center;
-    font-size: 1.25rem;
-    color: $white;
-    margin-bottom: 50px;
 
     &_dark {
       color: $font-dark;
     }
 
-    @media (min-width: 320px) and (max-width: 960px) {
-      margin-bottom: 16px;
+    &_light {
+      color: $white;
+    }
+  }
+
+  &__description {
+    margin-bottom: 50px;
+    font-size: 1.25rem;
+    text-align: center;
+    color: $white;
+
+    @media (min-width: 576px) {
+      margin-bottom: 30px;
       font-size: 1.5rem;
+    }
+
+    &_dark {
+      color: $font-dark;
     }
   }
 }

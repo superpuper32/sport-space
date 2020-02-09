@@ -4,15 +4,15 @@
     margin-right: 30px;
     padding: 14px 24px;
     width: 362px;
-    border: 2px solid #E6E6E6;
-    background-color: #F5F5F5;
+    border: 2px solid #e6e6e6;
+    background-color: #f5f5f5;
     font-size: 1.125rem;
     vertical-align: middle;
     color: $green;
     opacity: 2;
 
     &::placeholder {
-      color: #B7B7B7;
+      color: #b7b7b7;
     }
 
     &:focus {
@@ -35,8 +35,8 @@
   &__subscription {
     padding: 14px 24px;
     width: 100%;
-    border: 2px solid #F5F5F5;
-    background-color: #F5F5F5;
+    border: 2px solid #f5f5f5;
+    background-color: #f5f5f5;
     font-size: 1rem;
     vertical-align: middle;
     color: $green;
@@ -50,19 +50,23 @@
     margin-bottom: 30px;
     padding: 14px 24px;
     width: 100%;
-    border: 2px solid #E6E6E6;
-    background-color: #F5F5F5;
+    border: 2px solid #e6e6e6;
+    background-color: #f5f5f5;
     font-size: 18px;
     vertical-align: middle;
-    // color: #B7B7B7;
+    color: #b7b7b7;
     opacity: 2;
 
     &::placeholder {
-      color: #B7B7B7;
+      color: #b7b7b7;
     }
 
     &:focus {
       outline: none;
+    }
+
+    @media (min-width: 576px) {
+      padding: 20px 24px;
     }
   }
 
@@ -73,9 +77,9 @@
   &__search {
     margin: 0;
     padding: 14px 20px;
-    border: 2px solid #E6E6E6;
+    border: 2px solid #e6e6e6;
     border-right: none;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     font-size: 18px;
     line-height: 1;
     vertical-align: middle;
@@ -83,7 +87,7 @@
     opacity: 2;
 
     &::placeholder {
-      color: #B7B7B7;
+      color: #b7b7b7;
     }
 
     &:focus {
