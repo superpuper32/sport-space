@@ -1,464 +1,592 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>🏐Sport space</title>
-        <meta charset="utf-8">
-        <script src="index.js" defer></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__nav">
-                <nav class="nav">
-                    <ul class="nav__links">
-                        <li class="nav__link"><a href="/">О нас</a></li>
-                        <li class="nav__link"><a href="/">Команды</a></li>
-                        <li class="nav__link"><a href="/">Подбор тренера</a></li>
-                        <li class="nav__link"><a href="./playgrounds.html">Площадки</a></li>
-                        <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
-                        <li class="nav__link"><a href="/">Контакты</a></li>
-                    </ul>
-                </nav>
-                
-                <form class="nav__form">
-                    <input class="nav__input" type="text" list="sports" placeholder="Вид спорта" name="sport_cat" value="">
+  <head>
+    <title>🏐Sport space</title>
+    <meta charset="utf-8" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link"><a href="/">О нас</a></li>
+            <li class="nav__link"><a href="/">Команды</a></li>
+            <li class="nav__link"><a href="/">Подбор тренера</a></li>
+            <li class="nav__link"><a href="./playgrounds.html">Площадки</a></li>
+            <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
+            <li class="nav__link"><a href="/">Контакты</a></li>
+          </ul>
+        </nav>
 
-                    <datalist id="sports">
-                        <option value="Все виды">Все виды</option>
-                        <option value="Волейбол">Волейбол</option>
-                    </datalist>
-                </form>
+        <form class="nav__form">
+          <input
+            class="nav__input"
+            type="text"
+            list="sports"
+            placeholder="Вид спорта"
+            name="sport_cat"
+            value=""
+          />
+
+          <datalist id="sports">
+            <option value="Все виды">Все виды</option>
+            <option value="Волейбол">Волейбол</option>
+          </datalist>
+        </form>
+      </div>
+
+      <div class="header__login">
+        <a href="/" class="header__logo">
+          <img src="./assets/images/logo_main.png" alt="logo" />
+        </a>
+
+        <form class="header__inputs">
+          <input
+            type="email"
+            class="form__header"
+            id="header__email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            class="form__header"
+            id="header__password"
+            name="password"
+            placeholder="Пароль"
+            autocomplete="off"
+            required
+          />
+
+          <div class="btn btn__form">
+            Войти
+          </div>
+
+          <div class="btn btn__blank">
+            Регистрация
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div
+        class="main"
+        style="background-image: url('./assets/images/background_main.jpg')"
+      >
+        <div class="main__background">
+          <div class="container">
+            <div class="row">
+              <div class="main__title">
+                <h1>
+                  Любые игровые виды спорта в вашем районе на большом спортивном
+                  портале SportsSpace.ru
+                </h1>
+              </div>
             </div>
 
-            <div class="header__login">
-                <a href="/" class="header__logo">
-                    <img src="./assets/images/logo_main.png" alt="logo">
-                </a>
-
-                <form class="header__inputs">
-                    <input type="email" class="form__header" id="header__email" placeholder="Email">
-                    <input type="password" class="form__header" id="header__password" name="password" placeholder="Пароль" autocomplete="off" required>
-                    
-                    <div class="btn btn__form">
-                        Войти
-                    </div>
-
-                    <div class="btn btn__blank">
-                        Регистрация
-                    </div>
-                </form>
-            </div>
-        </header>
-        
-        <main>
-            <div class="main" style="background-image: url('./assets/images/background_main.jpg')">
-                <div class="main__background">
-                    <div class="container">
-                        <div class="row">
-                            <div class="main__title">
-                                <h1>
-                                    Любые игровые виды спорта в вашем районе на большом спортивном портале SportsSpace.ru
-                                </h1>
-                            </div>
-                        </div>
-        
-                        <div class="row">
-                            <div class="col">
-                                <div class="main__content">
-                                    Поиграть / Тренироваться / Турниры и сборы
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="row">
-                            <div class="col">
-                                <div class="main__btn">
-                                    <a href="/" class="btn__main-block">Принять участие</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="main__numeral">
-                                    5736
-                                </div>
-                                <div class="main__scores">
-                                    Участников
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="main__numeral">
-                                    127
-                                </div>
-                                <div class="main__scores">
-                                    Команд
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="main__numeral">
-                                    36
-                                </div>
-                                <div class="main__scores">
-                                    Турниров
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+              <div class="col">
+                <div class="main__content">
+                  Поиграть / Тренироваться / Турниры и сборы
                 </div>
+              </div>
             </div>
 
-            <section class="welcome">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="welcome__title">
-                                Добро пожаловать на сайт спортивного портала
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="welcome__content">
-                                Система автоматического подбора ближайшего к вам спортивного зада или комплекса, 
-                                вы сами бронируете время и место тренировки, посмотреть отзывы и фотографии зала, 
-                                создавать команды для игр или вступать в уже существующие. Вы можете быстро найти тренера 
-                                и забронировать время тренировки в удобном для вас зале.
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+              <div class="col">
+                <div class="main__btn">
+                  <a href="/" class="btn__main-block">Принять участие</a>
                 </div>
-            </section>
-
-            <section class="steps">
-                <div class="container">
-                    <div class="title__main title__main_dark">
-                        Как стать участником?
-                    </div>
-
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 col-lg-2">
-                            <div class="step">
-                                <div class="step__img step__img_reg"></div>
-                                <div class="step__title">
-                                    Регистрируйся
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-lg-2">
-                            <div class="step">
-                                <div class="step__img step__img_head"></div>
-                                <div class="step__title">
-                                    Заходи в свой кабинет
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-lg-2">
-                            <div class="step">
-                                <div class="step__img step__img_field"></div>
-                                <div class="step__title">
-                                    Выбирай турнир
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 col-lg-2">
-                            <div class="step">
-                                <div class="step__img step__img_takepart"></div>
-                                <div class="step__title">
-                                    Участвуй
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4 col-lg-2">
-                            <div class="step">
-                                <div class="step__img step__img_cup"></div>
-                                <div class="step__title">
-                                    Отмечай победу
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <article class="news">
-                <div class="container">
-                    <div class="title__main title__main_dark">
-                        Новости спорта
-                    </div>
-                </div>
-
-                <section class="news__cards">
-                    <article class="card-news">
-                        <div class="card-news__date">15.02.2020</div>
-
-                        <img class="card-news__image" src="./assets/images/news_01.jpg" alt="volley">
-
-                        <div class="card-news__body">
-                            <h5 class="card-news__title">
-                                Прошел турнир по волейболу среди женских команд юго-востока Московской области
-                            </h5>
-
-                            <hr class="card-news__hr">
-
-                            <p class="card-news__content">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus provident reprehenderit voluptatibus nulla ipsa enim assumenda voluptatum vero modi? Assumenda, fugit. Pariatur neque, debitis quas laudantium at doloribus veniam.
-                                Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere numquam id non. Quo, ratione? Illo, modi culpa sit magnam laboriosam cumque?
-                                Deleniti placeat cumque laborum distinctio aperiam odit maxime error necessitatibus minus maiores dolorum sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque quaerat placeat, quas quibusdam facilis vero.
-                            </p>
-                        </div>
-
-                        <div class="card-news__triangle"></div>
-                    </article>
-
-                    <a href="/" class="card-news">
-                        <div class="card-news__date">15.02.2020</div>
-                        <img src="./assets/images/news_02.jpg" class="card-news__image" alt="volley">
-
-                        <div class="card-news__body">
-                            <h5 class="card-news__title">Прошел турнир по волейболу среди женских команд юго-востока Московской области</h5>
-                            <hr class="card-news__hr">
-                            <div class="card-news__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus provident reprehenderit voluptatibus nulla ipsa enim assumenda voluptatum vero modi? Assumenda, fugit. Pariatur neque, debitis quas laudantium at doloribus veniam.
-                            Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere numquam id non. Quo, ratione? Illo, modi culpa sit magnam laboriosam cumque?
-                            Deleniti placeat cumque laborum distinctio aperiam odit maxime error necessitatibus minus maiores dolorum sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque quaerat placeat, quas quibusdam facilis vero.</div>
-                        </div>
-                        <div class="card-news__triangle"></div>
-                    </a>
-
-                    <a href="/" class="card-news">
-                        <div class="card-news__date">15.02.2020</div>
-                        <img src="./assets/images/news_03.jpg" class="card-news__image" alt="volley">
-
-                        <div class="card-news__body">
-                            <h5 class="card-news__title">Прошел турнир по волейболу среди женских команд юго-востока Московской области</h5>
-                            <hr class="card-news__hr">
-                            <div class="card-news__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium accusamus provident reprehenderit voluptatibus nulla ipsa enim assumenda voluptatum vero modi? Assumenda, fugit. Pariatur neque, debitis quas laudantium at doloribus veniam.
-                            Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere numquam id non. Quo, ratione? Illo, modi culpa sit magnam laboriosam cumque?
-                            Deleniti placeat cumque laborum distinctio aperiam odit maxime error necessitatibus minus maiores dolorum sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque quaerat placeat, quas quibusdam facilis vero.</div>
-                        </div>
-                        <div class="card-news__triangle"></div>
-                    </a>
-                </section>
-
-                <div class="container">
-                    <div class="row">
-                        <button type="button" class="btn btn__primary">Показать все</button>
-                    </div>
-                </div>
-            </article>
-
-            <section class="schedule">
-                <div class="container">
-                    <div class="title__main title__main_dark">
-                        Турниры и соревнования
-                    </div>
-
-                    <div class="row">
-                        <div class="schedule__tabs">
-                            <button type="button" class="btn btn__tab btn__tab_active">Предстоящие турниры</button>
-                            <button type="button" class="btn btn__tab">Текущие турниры</button>
-                        </div>
-                    </div>
-
-                    <div class="row schedule__cards">
-                        <div class="col-md-12 col-lg-4">
-                            <div class="card card__schedule">
-                                <div class="card-body card__body">
-                                    <div class="card__icon"></div>
-                                    <h5 class="card-title card__title">Лига Авиаторов 19/20</h5>
-                                    <p class="card-text card__content">открытие турнира: 17  сентября 19:00</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-4">
-                            <div class="card card__schedule">
-                                <div class="card-body card__body">
-                                    <div class="card__icon"></div>
-                                    <h5 class="card-title card__title">Лига Авиаторов 19/20</h5>
-                                    <p class="card-text card__content">открытие турнира: 17  сентября 19:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="container">
-                    <div class="row schedule__btn">
-                        <button type="button" class="btn btn__primary">Показать все</button>
-                    </div>
-                </div>
-            </section>
-
-            <section class="article">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="article__content">
-                                Система автоматического подбора ближайшего к вам спортивного комплекса
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit neque corrupti fugit aut accusamus ad odit, suscipit esse libero quas maiores, consequuntur quidem iste et! Dolor sed exercitationem aliquam.
-                                Odio minus officia cumque mollitia voluptatum, fugiat ab adipisci non, amet praesentium aliquid. Temporibus voluptatibus atque ratione, vitae iste repellendus ipsam distinctio, explicabo et nam, ipsa aut iusto placeat dolor.
-                                Et autem, ipsa error eius laboriosam, aspernatur mollitia cum ipsum aliquid blanditiis dignissimos. Odit quia necessitatibus voluptatibus deleniti similique. Eum corporis corrupti architecto magnam ullam blanditiis porro, ab recusandae voluptatem.
-                                Quaerat, ducimus inventore! Corrupti totam nesciunt, impedit atque quam nam enim repellat facilis excepturi modi ipsa ea a qui. Vel alias deleniti atque pariatur, tempore similique! Molestias numquam itaque possimus.
-                                Illo culpa, esse doloribus corporis porro itaque impedit, consectetur facere sequi unde harum sit natus nemo est earum? Recusandae suscipit accusantium commodi facilis ab, similique doloribus maxime ex corrupti temporibus!
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam vitae, consectetur inventore voluptatibus sapiente voluptate neque corrupti expedita quo iusto odit suscipit minima quasi. Laboriosam quia quaerat omnis illum sint.
-                                Voluptates corporis repellat blanditiis doloremque! Magnam eius minima ea reprehenderit ipsam laboriosam nesciunt pariatur, soluta assumenda facere deserunt corrupti ipsum perferendis error illo voluptate corporis quasi possimus cum deleniti mollitia?
-                                Nam quisquam cupiditate, quidem voluptates obcaecati vero deserunt laboriosam inventore rem similique vitae adipisci dolor? Maiores consequuntur dolores doloribus sapiente odit, accusantium corrupti iusto. Necessitatibus beatae sit eveniet perspiciatis minima.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="tituls">
-                <div class="container">
-                    <div class="title__main title__main_light">
-                        "Покажи себя"
-                    </div>
-
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <div class="title__description">
-                                Здесь вы можете найти подходяший вам вид спорта
-                                и место где начать тренировки, обрести новых знакомых и друзей
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card-titul">
-                                <div class="card-titul__image card-titul__image_arena"></div>
-                                <div class="card-titul__title">
-                                    Игровые площадки
-                                </div>
-                                <div class="card-titul__content">
-                                    Легкий способ места для спортивных тренировок
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card-titul">
-                                <div class="card-titul__image card-titul__image_coach"></div>
-                                <div class="card-titul__title">
-                                    Тренера
-                                </div>
-                                <div class="card-titul__content">
-                                    Подбор тренера с подробным описанием его квалификационных качеств, дипломов и наград
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card-titul">
-                                <div class="card-titul__image card-titul__image_teams"></div>
-                                <div class="card-titul__title">
-                                    Команды
-                                </div>
-                                <div class="card-titul__content">
-                                    Тут вы сможете найти подходящую команду или создать свою, а также выбрать место тренировок
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 col-lg-3">
-                            <div class="card-titul">
-                                <div class="card-titul__image card-titul__image_medal"></div>
-                                <div class="card-titul__title">
-                                    Турниры и сборы
-                                </div>
-                                <div class="card-titul__content">
-                                    Вы можете участвовать, создавать или участвовать в междунардных турнирах и сборах
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <section class="message">
-            <div class="container">
-                <div class="title__main title__main_dark">
-                    Отправить сообщение
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="title__description title__description_dark">
-                            Если у вас есть предложения и возникли какие либо вопросы,
-                            пожалуйста воспользуйтесь формой обратной связи
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-md-5 pr-2">
-                        <input class="form__input" type="text" name="message-name" placeholder="Укажите Ваше имя">
-                    </div>
-                    <div class="col-md-5 pl-2">
-                        <input class="form__input" type="email" name="message-email" placeholder="Укажите email">
-                    </div>
-                    <div class="col-md-10">
-                        <textarea class="form__input form__textarea" id="message-textarea" name="message-textarea" rows="5" cols="40" placeholder="Текст вашего сообщения"></textarea>
-                    </div>
-
-                </div>
-                
-                <div class="row">
-                    <button type="button" class="btn btn__primary">Отправить</button>
-                </div>
+              </div>
             </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="main__numeral">
+                  5736
+                </div>
+                <div class="main__scores">
+                  Участников
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="main__numeral">
+                  127
+                </div>
+                <div class="main__scores">
+                  Команд
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="main__numeral">
+                  36
+                </div>
+                <div class="main__scores">
+                  Турниров
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="welcome">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="welcome__title">
+                Добро пожаловать на сайт спортивного портала
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="welcome__content">
+                Система автоматического подбора ближайшего к вам спортивного
+                зада или комплекса, вы сами бронируете время и место тренировки,
+                посмотреть отзывы и фотографии зала, создавать команды для игр
+                или вступать в уже существующие. Вы можете быстро найти тренера
+                и забронировать время тренировки в удобном для вас зале.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="container">
+          <div class="title__main title__main_dark">
+            Как стать участником?
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-2">
+              <div class="step">
+                <div class="step__img step__img_reg"></div>
+                <div class="step__title">
+                  Регистрируйся
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+              <div class="step">
+                <div class="step__img step__img_head"></div>
+                <div class="step__title">
+                  Заходи в свой кабинет
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+              <div class="step">
+                <div class="step__img step__img_field"></div>
+                <div class="step__title">
+                  Выбирай турнир
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2">
+              <div class="step">
+                <div class="step__img step__img_takepart"></div>
+                <div class="step__title">
+                  Участвуй
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-lg-2">
+              <div class="step">
+                <div class="step__img step__img_cup"></div>
+                <div class="step__title">
+                  Отмечай победу
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article class="news">
+        <div class="container">
+          <div class="title__main title__main_dark">
+            Новости спорта
+          </div>
+        </div>
+
+        <section class="news__cards">
+          <article class="card-news">
+            <div class="card-news__date">15.02.2020</div>
+
+            <img
+              class="card-news__image"
+              src="./assets/images/news_01.jpg"
+              alt="volley"
+            />
+
+            <div class="card-news__body">
+              <h5 class="card-news__title">
+                Прошел турнир по волейболу среди женских команд юго-востока
+                Московской области
+              </h5>
+
+              <hr class="card-news__hr" />
+
+              <p class="card-news__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium accusamus provident reprehenderit voluptatibus nulla
+                ipsa enim assumenda voluptatum vero modi? Assumenda, fugit.
+                Pariatur neque, debitis quas laudantium at doloribus veniam.
+                Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad
+                sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere
+                numquam id non. Quo, ratione? Illo, modi culpa sit magnam
+                laboriosam cumque? Deleniti placeat cumque laborum distinctio
+                aperiam odit maxime error necessitatibus minus maiores dolorum
+                sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque
+                quaerat placeat, quas quibusdam facilis vero.
+              </p>
+            </div>
+
+            <div class="card-news__triangle"></div>
+          </article>
+
+          <a href="/" class="card-news">
+            <div class="card-news__date">15.02.2020</div>
+            <img
+              src="./assets/images/news_02.jpg"
+              class="card-news__image"
+              alt="volley"
+            />
+
+            <div class="card-news__body">
+              <h5 class="card-news__title">
+                Прошел турнир по волейболу среди женских команд юго-востока
+                Московской области
+              </h5>
+              <hr class="card-news__hr" />
+              <div class="card-news__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium accusamus provident reprehenderit voluptatibus nulla
+                ipsa enim assumenda voluptatum vero modi? Assumenda, fugit.
+                Pariatur neque, debitis quas laudantium at doloribus veniam.
+                Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad
+                sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere
+                numquam id non. Quo, ratione? Illo, modi culpa sit magnam
+                laboriosam cumque? Deleniti placeat cumque laborum distinctio
+                aperiam odit maxime error necessitatibus minus maiores dolorum
+                sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque
+                quaerat placeat, quas quibusdam facilis vero.
+              </div>
+            </div>
+            <div class="card-news__triangle"></div>
+          </a>
+
+          <a href="/" class="card-news">
+            <div class="card-news__date">15.02.2020</div>
+            <img
+              src="./assets/images/news_03.jpg"
+              class="card-news__image"
+              alt="volley"
+            />
+
+            <div class="card-news__body">
+              <h5 class="card-news__title">
+                Прошел турнир по волейболу среди женских команд юго-востока
+                Московской области
+              </h5>
+              <hr class="card-news__hr" />
+              <div class="card-news__content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Praesentium accusamus provident reprehenderit voluptatibus nulla
+                ipsa enim assumenda voluptatum vero modi? Assumenda, fugit.
+                Pariatur neque, debitis quas laudantium at doloribus veniam.
+                Neque, minus voluptatem? Expedita sapiente ea facilis dolorum ad
+                sed? Veniam, sapiente. Eius et facilis assumenda, laborum facere
+                numquam id non. Quo, ratione? Illo, modi culpa sit magnam
+                laboriosam cumque? Deleniti placeat cumque laborum distinctio
+                aperiam odit maxime error necessitatibus minus maiores dolorum
+                sequi quis tenetur est quas id, ipsa enim natus culpa. Cumque
+                quaerat placeat, quas quibusdam facilis vero.
+              </div>
+            </div>
+            <div class="card-news__triangle"></div>
+          </a>
         </section>
 
-        <section class="subscription">
-            <div class="title__main title__main_light">
-                Будь в курсе
-            </div>
+        <div class="container">
+          <div class="row">
+            <button type="button" class="btn btn__primary">Показать все</button>
+          </div>
+        </div>
+      </article>
 
-            <div class="container subscription__form">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-6">
-                        <div class="subscription__description">
-                            Подписавайся на нашу рассылку и ты всегда будешь знать, где проходят соревнования, сборы и многое другое
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-6 my-auto">
-                        <div class="subscription__input">
-                            <input class="form__subscription" type="email" name="subscription-email" id="subscription-email" placeholder="Введите email">
-                            <button class="btn btn__input">Подписаться</button>
-                        </div>
-                    </div>
+      <section class="schedule">
+        <div class="container">
+          <div class="title__main title__main_dark">
+            Турниры и соревнования
+          </div>
+
+          <div class="row">
+            <div class="schedule__tabs">
+              <button type="button" class="btn btn__tab btn__tab_active">
+                Предстоящие турниры
+              </button>
+              <button type="button" class="btn btn__tab">
+                Текущие турниры
+              </button>
+            </div>
+          </div>
+
+          <div class="row schedule__cards">
+            <div class="col-md-12 col-lg-4">
+              <div class="card card__schedule">
+                <div class="card-body card__body">
+                  <div class="card__icon"></div>
+                  <h5 class="card-title card__title">Лига Авиаторов 19/20</h5>
+                  <p class="card-text card__content">
+                    открытие турнира: 17 сентября 19:00
+                  </p>
                 </div>
+              </div>
             </div>
-
-        </section>
-
-        <footer class="footer">
-            <a href="/" class="header__login__logo">
-                <img src="./assets/images/logo_transparent.png" alt="logo">
-            </a>
-
-            <div class="footer__payments">
-                <img src="./assets/images/maestro.png" alt="maestro">
-                <img src="./assets/images/master-card.png" alt="master-card">
-                <img src="./assets/images/visa.png" alt="visa">
-                <img src="./assets/images/alfa.png" alt="alfa">
-            </div>
-
-            <div class="footer__social">
-                <div class="social">
-                    <div class="social__icon"></div>
-                    <div class="social__icon"></div>
-                    <div class="social__icon"></div>
-                    <div class="social__icon"></div>
-                    <div class="social__icon"></div>
+            <div class="col-md-12 col-lg-4">
+              <div class="card card__schedule">
+                <div class="card-body card__body">
+                  <div class="card__icon"></div>
+                  <h5 class="card-title card__title">Лига Авиаторов 19/20</h5>
+                  <p class="card-text card__content">
+                    открытие турнира: 17 сентября 19:00
+                  </p>
                 </div>
-                &copy; 2020 Все права защищены.
+              </div>
             </div>
-        </footer>
-    </body>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row schedule__btn">
+            <button type="button" class="btn btn__primary">Показать все</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="article">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="article__content">
+                Система автоматического подбора ближайшего к вам спортивного
+                комплекса Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Est sit neque corrupti fugit aut accusamus ad odit,
+                suscipit esse libero quas maiores, consequuntur quidem iste et!
+                Dolor sed exercitationem aliquam. Odio minus officia cumque
+                mollitia voluptatum, fugiat ab adipisci non, amet praesentium
+                aliquid. Temporibus voluptatibus atque ratione, vitae iste
+                repellendus ipsam distinctio, explicabo et nam, ipsa aut iusto
+                placeat dolor. Et autem, ipsa error eius laboriosam, aspernatur
+                mollitia cum ipsum aliquid blanditiis dignissimos. Odit quia
+                necessitatibus voluptatibus deleniti similique. Eum corporis
+                corrupti architecto magnam ullam blanditiis porro, ab recusandae
+                voluptatem. Quaerat, ducimus inventore! Corrupti totam nesciunt,
+                impedit atque quam nam enim repellat facilis excepturi modi ipsa
+                ea a qui. Vel alias deleniti atque pariatur, tempore similique!
+                Molestias numquam itaque possimus. Illo culpa, esse doloribus
+                corporis porro itaque impedit, consectetur facere sequi unde
+                harum sit natus nemo est earum? Recusandae suscipit accusantium
+                commodi facilis ab, similique doloribus maxime ex corrupti
+                temporibus! Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Aperiam vitae, consectetur inventore voluptatibus sapiente
+                voluptate neque corrupti expedita quo iusto odit suscipit minima
+                quasi. Laboriosam quia quaerat omnis illum sint. Voluptates
+                corporis repellat blanditiis doloremque! Magnam eius minima ea
+                reprehenderit ipsam laboriosam nesciunt pariatur, soluta
+                assumenda facere deserunt corrupti ipsum perferendis error illo
+                voluptate corporis quasi possimus cum deleniti mollitia? Nam
+                quisquam cupiditate, quidem voluptates obcaecati vero deserunt
+                laboriosam inventore rem similique vitae adipisci dolor? Maiores
+                consequuntur dolores doloribus sapiente odit, accusantium
+                corrupti iusto. Necessitatibus beatae sit eveniet perspiciatis
+                minima.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tituls">
+        <div class="container">
+          <div class="title__main title__main_light">
+            "Покажи себя"
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="title__description">
+                Здесь вы можете найти подходяший вам вид спорта и место где
+                начать тренировки, обрести новых знакомых и друзей
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="card-titul">
+                <div class="card-titul__image card-titul__image_arena"></div>
+                <div class="card-titul__title">
+                  Игровые площадки
+                </div>
+                <div class="card-titul__content">
+                  Легкий способ места для спортивных тренировок
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card-titul">
+                <div class="card-titul__image card-titul__image_coach"></div>
+                <div class="card-titul__title">
+                  Тренера
+                </div>
+                <div class="card-titul__content">
+                  Подбор тренера с подробным описанием его квалификационных
+                  качеств, дипломов и наград
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card-titul">
+                <div class="card-titul__image card-titul__image_teams"></div>
+                <div class="card-titul__title">
+                  Команды
+                </div>
+                <div class="card-titul__content">
+                  Тут вы сможете найти подходящую команду или создать свою, а
+                  также выбрать место тренировок
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="card-titul">
+                <div class="card-titul__image card-titul__image_medal"></div>
+                <div class="card-titul__title">
+                  Турниры и сборы
+                </div>
+                <div class="card-titul__content">
+                  Вы можете участвовать, создавать или участвовать в
+                  междунардных турнирах и сборах
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="message">
+      <div class="container">
+        <div class="title__main title__main_dark">
+          Отправить сообщение
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="title__description title__description_dark">
+              Если у вас есть предложения и возникли какие либо вопросы,
+              пожалуйста воспользуйтесь формой обратной связи
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-5 pr-2">
+            <input
+              class="form__input"
+              type="text"
+              name="message-name"
+              placeholder="Укажите Ваше имя"
+            />
+          </div>
+          <div class="col-md-5 pl-2">
+            <input
+              class="form__input"
+              type="email"
+              name="message-email"
+              placeholder="Укажите email"
+            />
+          </div>
+          <div class="col-md-10">
+            <textarea
+              class="form__input form__textarea"
+              id="message-textarea"
+              name="message-textarea"
+              rows="5"
+              cols="40"
+              placeholder="Текст вашего сообщения"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <button type="button" class="btn btn__primary">Отправить</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription">
+      <div class="title__main title__main_light">
+        Будь в курсе
+      </div>
+
+      <div class="container subscription__form">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+            <div class="subscription__description">
+              Подписавайся на нашу рассылку и ты всегда будешь знать, где
+              проходят соревнования, сборы и многое другое
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 my-auto">
+            <div class="subscription__input">
+              <input
+                class="form__subscription"
+                type="email"
+                name="subscription-email"
+                id="subscription-email"
+                placeholder="Введите email"
+              />
+              <button class="btn btn__input">Подписаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a href="/" class="footer__logo">
+        <img src="./assets/images/logo_transparent.png" alt="logo" />
+      </a>
+
+      <div class="footer__payments">
+        <img src="./assets/images/maestro.png" alt="maestro" />
+        <img src="./assets/images/master-card.png" alt="master-card" />
+        <img src="./assets/images/visa.png" alt="visa" />
+        <img src="./assets/images/alfa.png" alt="alfa" />
+      </div>
+
+      <div class="footer__social">
+        <div class="social">
+          <div class="social__icon"></div>
+          <div class="social__icon"></div>
+          <div class="social__icon"></div>
+          <div class="social__icon"></div>
+          <div class="social__icon"></div>
+        </div>
+        &copy; 2020 Все права защищены.
+      </div>
+    </footer>
+  </body>
 </html>
