@@ -1,27 +1,70 @@
 .grid-table {
+  &__row {
+    display: grid;
+    grid-template-columns: 30% repeat(5, 1fr);
+    grid-column-gap: 0.25rem;
 
-    &__row {
-        display: grid;
-        grid-template-columns: 30% repeat(5, 1fr);
-        grid-column-gap: .25rem;
-
-        &_header {
-            div {
-                background-color: $gray;
-                color: $primary;
-            }
-        }
-
-        &_body {
-            div {
-                padding: 2rem 0;
-                color: $green-light;
-            }
-        }
+    &_header {
+      div {
+        // font-size: 0.875rem;
+        background-color: $gray;
+        color: $primary;
+      }
     }
 
-    &__cell {
-        font-style: .75rem;
-        padding: 1rem 0;
+    &_body {
+      div {
+        padding: 2rem 0;
+        color: $green-light;
+      }
     }
+  }
+
+  &__cell {
+    padding: 1rem 0;
+    // font-size: 0.875rem;
+    // letter-spacing: -0.04em;
+  }
+
+  &__date {
+    position: relative;
+    display: block;
+    margin-left: 40px;
+    text-align: left;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -25%;
+      transform: translate(25%);
+      display: inline-block;
+      width: 0.875rem;
+      height: 1rem;
+      background: url(./assets/images/schedule_icon.svg) no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  &__time {
+    position: relative;
+    display: block;
+    margin-left: 40px;
+    text-align: left;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -25%;
+      transform: translate(25%);
+      display: inline-block;
+      width: 0.875rem;
+      height: 1rem;
+      background: url(./assets/images/schedule_icon.svg) no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+  &__username {
+    text-decoration: underline;
+  }
 }
