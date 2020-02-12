@@ -1,14 +1,24 @@
 .form-reg {
-  display: flex;
-  flex-direction: column;
+  &__row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
 
   label {
     color: $primary-green;
     text-transform: uppercase;
+    margin-bottom: 15px;
   }
 
   input {
     border: 2px solid $primary-green;
     height: 60px;
+    vertical-align: middle;
+
+    &[type="radio"]:checked {
+      color: $green;
+      border: 1px solid $primary-green;
+    }
   }
 }
