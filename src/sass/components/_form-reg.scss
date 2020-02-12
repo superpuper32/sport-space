@@ -16,7 +16,7 @@
     height: 60px;
     vertical-align: middle;
 
-    &[type="radio"]:checked {
+    &[type="radio"] {
       color: $green;
       border: 1px solid $primary-green;
     }

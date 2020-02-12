@@ -1,0 +1,9 @@
+.teams {
+  &__background {
+    width: 100%;
+    height: 680px;
+    background: url("./assets/images/teams_background.jpg") no-repeat center
+      center;
+    background-size: cover;
+  }
+}

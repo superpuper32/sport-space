@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🏐Teams</title>
+    <meta charset="utf-8" />
+    <script src="../pages/teams/teams.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link"><a href="/">О нас</a></li>
+            <li class="nav__link"><a href="./teams.html">Команды</a></li>
+            <li class="nav__link"><a href="/">Подбор тренера</a></li>
+            <li class="nav__link"><a href="./playgrounds.html">Площадки</a></li>
+            <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
+            <li class="nav__link"><a href="/">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <form class="nav__form">
+          <input
+            class="nav__input"
+            type="text"
+            list="sports"
+            placeholder="Вид спорта"
+            name="sport_cat"
+            value=""
+          />
+
+          <datalist id="sports">
+            <option value="Все виды">Все виды</option>
+            <option value="Волейбол">Волейбол</option>
+          </datalist>
+        </form>
+      </div>
+
+      <div class="header__login">
+        <a href="/" class="header__logo">
+          <img src="./assets/images/logo_main.png" alt="logo" />
+        </a>
+
+        <form class="header__inputs">
+          <input
+            type="email"
+            class="form__header"
+            id="header__email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            class="form__header"
+            id="header__password"
+            name="password"
+            placeholder="Пароль"
+            autocomplete="off"
+            required
+          />
+
+          <div class="btn btn__form">
+            Войти
+          </div>
+
+          <a href="/registration.html" class="btn btn__blank">
+            Регистрация
+          </a>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="teams__background"></section>
+
+      <section class="teams__content">
+        <div class="container">
+          <div class="title__main">
+            Список команд
+          </div>
+          <div class="row">
+            <div class="playgrounds__nav">
+              <div class="playgrounds__search">
+                <input
+                  type="text"
+                  class="form__search"
+                  id="playgrounds__search"
+                  placeholder="Поиск площадки"
+                />
+                <button class="btn btn__search"></button>
+              </div>
+
+              <div class="btn__toolbar">
+                <div class="btn btn__tool btn__tool_active">1</div>
+                <div class="btn btn__tool">2</div>
+                <div class="btn btn__tool">3</div>
+                <div class="btn btn__tool">4</div>
+                <div class="btn btn__tool">5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
