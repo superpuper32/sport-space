@@ -1,0 +1,14 @@
+.form-reg {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    color: $primary-green;
+    text-transform: uppercase;
+  }
+
+  input {
+    border: 2px solid $primary-green;
+    height: 60px;
+  }
+}

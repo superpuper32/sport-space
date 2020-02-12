@@ -5,6 +5,92 @@
     <meta charset="utf-8" />
     <script src="../pages/registration/registration.js" defer></script>
   </head>
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link"><a href="/">О нас</a></li>
+            <li class="nav__link"><a href="/">Команды</a></li>
+            <li class="nav__link"><a href="/">Подбор тренера</a></li>
+            <li class="nav__link"><a href="./playgrounds.html">Площадки</a></li>
+            <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
+            <li class="nav__link"><a href="/">Контакты</a></li>
+          </ul>
+        </nav>
 
-  <body></body>
+        <form class="nav__form">
+          <input
+            class="nav__input"
+            type="text"
+            list="sports"
+            placeholder="Вид спорта"
+            name="sport_cat"
+            value=""
+          />
+
+          <datalist id="sports">
+            <option value="Все виды">Все виды</option>
+            <option value="Волейбол">Волейбол</option>
+          </datalist>
+        </form>
+      </div>
+
+      <div class="header__login">
+        <a href="/" class="header__logo">
+          <img src="./assets/images/logo_main.png" alt="logo" />
+        </a>
+
+        <form class="header__inputs">
+          <input
+            type="email"
+            class="form__header"
+            id="header__email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            class="form__header"
+            id="header__password"
+            name="password"
+            placeholder="Пароль"
+            autocomplete="off"
+            required
+          />
+
+          <div class="btn btn__form">
+            Войти
+          </div>
+
+          <a href="/registration.html" class="btn btn__blank">
+            Регистрация
+          </a>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="registration">
+        <div class="container">
+          <div class="title__main">Регистрация</div>
+
+          <div class="row justify-content-end">
+            <div class="col-md-4">
+              <div class="form-reg">
+                <label for="reg-name">Имя</label>
+                <input id="reg-name" type="text" value="" />
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-reg">
+                <label for="reg-name">Фамилия</label>
+                <input id="reg-name" type="text" value="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
