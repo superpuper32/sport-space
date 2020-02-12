@@ -1,124 +1,155 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Playgrounds</title>
-        <meta charset="utf-8">
-        <script src="./tournaments/playgrounds.js" defer></script>
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__nav">
-                <nav class="nav">
-                    <ul class="nav__links">
-                        <li class="nav__link"><a href="/">О нас</a></li>
-                        <li class="nav__link"><a href="/">Команды</a></li>
-                        <li class="nav__link"><a href="/">Подбор тренера</a></li>
-                        <li class="nav__link"><a href="/">Площадки</a></li>
-                        <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
-                        <li class="nav__link"><a href="/">Контакты</a></li>
-                    </ul>
-                </nav>
-                
-                <form class="nav__form">
-                    <input class="nav__input" type="text" placeholder="Вид спорта" name="sport_cat">
-                </form>
+  <head>
+    <title>Playgrounds</title>
+    <meta charset="utf-8" />
+    <script src="../pages/playgrounds/playgrounds.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link"><a href="/">О нас</a></li>
+            <li class="nav__link"><a href="/">Команды</a></li>
+            <li class="nav__link"><a href="/">Подбор тренера</a></li>
+            <li class="nav__link"><a href="/">Площадки</a></li>
+            <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
+            <li class="nav__link"><a href="/">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <form class="nav__form">
+          <input
+            class="nav__input"
+            type="text"
+            placeholder="Вид спорта"
+            name="sport_cat"
+          />
+        </form>
+      </div>
+
+      <div class="header__login">
+        <a href="/" class="header__login__logo">
+          <img src="./assets/images/logo_main.png" alt="logo" />
+        </a>
+
+        <form class="header__login__inputs">
+          <input
+            type="email"
+            class="form__header"
+            id="header__email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            class="form__header"
+            id="header__password"
+            name="password"
+            placeholder="Пароль"
+            autocomplete="off"
+            required
+          />
+
+          <div class="btn btn__form">
+            Войти
+          </div>
+          <div class="btn btn__blank">
+            Регистрация
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <section class="playgrounds__background"></section>
+
+    <main class="main">
+      <section class="playgrounds__cards">
+        <div class="container">
+          <div class="title__main title__main_dark">
+            Игровые площадки
+          </div>
+
+          <div class="row">
+            <div class="playgrounds__nav">
+              <div class="playgrounds__search">
+                <input
+                  type="text"
+                  class="form__search"
+                  id="playgrounds__search"
+                  placeholder="Поиск площадки"
+                />
+                <button class="btn btn__search"></button>
+              </div>
+
+              <div class="btn__toolbar">
+                <div class="btn btn__tool btn__tool_active">1</div>
+                <div class="btn btn__tool">2</div>
+                <div class="btn btn__tool">3</div>
+                <div class="btn btn__tool">4</div>
+                <div class="btn btn__tool">5</div>
+              </div>
             </div>
+          </div>
 
-            <div class="header__login">
-                <a href="/" class="header__login__logo">
-                    <img src="./assets/images/logo_main.png" alt="logo">
-                </a>
-
-                <form class="header__login__inputs">
-                    <input type="email" class="form__header" id="header__email" placeholder="Email">
-                    <input type="password" class="form__header" id="header__password" name="password" placeholder="Пароль" autocomplete="off" required>
-                    
-                    <div class="btn btn__form">
-                        Войти
-                    </div>
-                    <div class="btn btn__blank">
-                        Регистрация
-                    </div>
-                </form>
+          <div class="row">
+            <div class="col-md-2">
+              <div class="card-playgrounds">
+                <div class="card-playgrounds__image"></div>
+                <div class="card-playgrounds__body">
+                  <h5 class="card-playgrounds__title">
+                    Малаховское озеро /Песок/
+                  </h5>
+                  <div class="review-rate">
+                    <div class="review-rate__star review-rate__star_fill"></div>
+                    <div class="review-rate__star review-rate__star_fill"></div>
+                    <div class="review-rate__star review-rate__star_fill"></div>
+                    <div class="review-rate__star review-rate__star_fill"></div>
+                    <div class="review-rate__star"></div>
+                  </div>
+                  <p class="card-playgrounds__content">
+                    отзывы: <span>132</span> заказы: <span>154</span>
+                  </p>
+                </div>
+                <button class="btn btn__card">Подробнее</button>
+              </div>
             </div>
-        </header>
-
-        <section class="playgrounds__background"></section>
-
-        <main class="main">
-            <section class="playgrounds__cards">
-                <div class="container">
-                    <div class="title__main title__main_dark">
-                        Игровые площадки
-                    </div>
-
-                    <div class="row">
-                        <div class="playgrounds__nav">
-                            <div class="playgrounds__search">
-                                <input type="text" class="form__search" id="playgrounds__search" placeholder="Поиск площадки">
-                                <button class="btn btn__search"></button>
-                            </div>
-
-                            <div class="btn__toolbar">
-                                <div class="btn btn__tool btn__tool_active">1</div>
-                                <div class="btn btn__tool">2</div>
-                                <div class="btn btn__tool">3</div>
-                                <div class="btn btn__tool">4</div>
-                                <div class="btn btn__tool">5</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="card-playgrounds">
-                                <div class="card-playgrounds__image"></div>
-                                <div class="card-playgrounds__body">
-                                    <h5 class="card-playgrounds__title">Малаховское озеро /Песок/</h5>
-                                    <div class="review-rate">
-                                        <div class="review-rate__star review-rate__star_fill"></div>
-                                        <div class="review-rate__star review-rate__star_fill"></div>
-                                        <div class="review-rate__star review-rate__star_fill"></div>
-                                        <div class="review-rate__star review-rate__star_fill"></div>
-                                        <div class="review-rate__star"></div>
-                                    </div>
-                                    <p class="card-playgrounds__content">отзывы: <span>132</span> заказы: <span>154</span></p>
-                                </div>
-                                <button class="btn btn__card">Подробнее</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card-playgrounds">
-                                <div class="card-playgrounds__image"></div>
-                                <div class="card-playgrounds__body">
-                                    <h5 class="card-playgrounds__title">Малаховское озеро /Песок/</h5>
-                                    <div class="review-rate">
-                                        <div class="review-rate__star review-rate__star_fill"></div>
-                                        <div class="review-rate__star review-rate__star_fill"></div>
-                                        <div class="review-rate__star review-rate__star_fill"></div>
-                                        <div class="review-rate__star review-rate__star_fill"></div>
-                                        <div class="review-rate__star"></div>
-                                    </div>
-                                    <p class="card-playgrounds__content">отзывы: <span>132</span> заказы: <span>154</span></p>
-                                </div>
-                                <button class="btn btn__card">Подробнее</button>
-                            </div>
-                        </div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                        <div class="col-md-2"></div>
-                    </div>
+            <div class="col-md-2">
+              <div class="card-playgrounds">
+                <div class="card-playgrounds__image"></div>
+                <div class="card-playgrounds__body">
+                  <h5 class="card-playgrounds__title">
+                    Малаховское озеро /Песок/
+                  </h5>
+                  <div class="review-rate">
+                    <div class="review-rate__star review-rate__star_fill"></div>
+                    <div class="review-rate__star review-rate__star_fill"></div>
+                    <div class="review-rate__star review-rate__star_fill"></div>
+                    <div class="review-rate__star review-rate__star_fill"></div>
+                    <div class="review-rate__star"></div>
+                  </div>
+                  <p class="card-playgrounds__content">
+                    отзывы: <span>132</span> заказы: <span>154</span>
+                  </p>
                 </div>
-            </section>
+                <button class="btn btn__card">Подробнее</button>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </section>
 
-            <section class="playgrounds__map">
-                <div class="container">
-                    <div class="title__main title__main_dark">
-                        Найти площадку на карте
-                    </div>
-                </div>
-            </section>
-        </main>
-    </body>
+      <section class="playgrounds__map">
+        <div class="container">
+          <div class="title__main title__main_dark">
+            Найти площадку на карте
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
