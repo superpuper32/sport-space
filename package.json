@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "clean": "rm dist/bundle.js",
-    "start": "parcel src/*.html",
+    "start": "parcel src/results.html",
     "build-prod": "parcel build src/index.html"
   },
   "dependencies": {},

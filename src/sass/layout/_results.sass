@@ -1,0 +1,37 @@
+.results
+    margin: 0 30px
+
+    &__title
+        font-size: 3.125rem
+        text-transform: uppercase
+        color: #000
+
+        span
+            color: #B3B3B3
+            text-transform: none
+
+    &__table
+        max-width: 100%
+        border: 1px solid $green
+
+    &__header
+        background-color: $primary-green
+        color: #ffffff
+
+    &__row
+        display: grid
+        grid-template-columns: repeat(9, 1fr)
+        text-decoration: none
+
+    &__cell
+        padding: 15px 0
+        border: 1px solid $green
+        font-size: .625rem
+        text-align: center
+
+        &_dark
+            background-color: $green
+
+        &_primary
+            background-color: $primary-green
+            color: #ffffff

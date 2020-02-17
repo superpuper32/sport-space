@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🏐Sport space</title>
+    <meta charset="utf-8" />
+    <script src="results.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link"><a href="/">О нас</a></li>
+            <li class="nav__link"><a href="./teams.html">Команды</a></li>
+            <li class="nav__link"><a href="/">Подбор тренера</a></li>
+            <li class="nav__link"><a href="./playgrounds.html">Площадки</a></li>
+            <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
+            <li class="nav__link"><a href="/">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <form class="nav__form">
+          <input
+            class="nav__input"
+            type="text"
+            list="sports"
+            placeholder="Вид спорта"
+            name="sport_cat"
+            value=""
+          />
+
+          <datalist id="sports">
+            <option value="Все виды">Все виды</option>
+            <option value="Волейбол">Волейбол</option>
+          </datalist>
+        </form>
+      </div>
+
+      <div class="header__login">
+        <a href="/" class="header__logo">
+          <img src="./assets/images/logo_main.png" alt="logo" />
+        </a>
+
+        <form class="header__inputs">
+          <input
+            type="email"
+            class="form__header"
+            id="header__email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            class="form__header"
+            id="header__password"
+            name="password"
+            placeholder="Пароль"
+            autocomplete="off"
+            required
+          />
+
+          <div class="btn btn__form">
+            Войти
+          </div>
+
+          <a href="/registration.html" class="btn btn__blank">
+            Регистрация
+          </a>
+        </form>
+      </div>
+    </header>
+
+    <main>
+        <nav class="tournaments__nav">
+            <ul class="tournaments__links">
+                <li class="tournaments__link"><a href="/tournaments">Турниры</a></li
+                    class="tournaments__link">
+                <li class="tournaments__link tournaments__link_active"><a href="/results">Результаты</a></li>
+                <li class="tournaments__link"><a href="/winners">Победители</a></li>
+            </ul>
+        </nav>
+
+        <section class="tournaments">
+            <div class="tournaments__aside">
+                <div class="tournaments__kind">
+                    Сезон
+                    <div class="tournaments__name">
+                        Лига Авиаторов 19/20
+                    </div>
+                    <div class="tournaments__name">
+                        Лига А Мужчины Любительская Волейбольная Лига
+                    </div>
+                </div>
+        
+        
+                <div class="tournaments__kind">
+                    Дуэль команд
+                </div>
+        
+                <div class="tournaments__kind">
+                    Плей-офф
+                </div>
+        
+                <div class="tournaments__kind">
+                    Лига чемпионов
+                </div>
+            </div>
+
+            <div class="results">
+                <div class="results__title">
+                    <span>Расписание и результаты встреч:</span> Лига А Мужчины
+                </div>
+
+                <div class="results__table">
+                    <div class="results__header results__row">
+                        <div class="results__cell results__cell_dark">Участники</div>
+                        <div class="results__cell">Метеор</div>
+                        <div class="results__cell">Легион</div>
+                        <div class="results__cell">El-Paso</div>
+                        <div class="results__cell">Некрасовка</div>
+                        <div class="results__cell">Электрон-Волжанка</div>
+                        <div class="results__cell">Люберцы</div>
+                        <div class="results__cell">Виктория Электроугли</div>
+                        <div class="results__cell">БАСКАТ</div>
+                    </div>
+                    <div class="results__row">
+                        <div class="results__cell results__cell_primary">Метеор</div>
+                        <div class="results__cell results__cell_empty"></div>
+                        <div class="results__cell">
+                            <time>17.12.19 / 20:00</time>
+                            <div>
+                                3 : 1
+                            </div>
+                        </div>
+                        <div class="results__cell">
+                            <time>17.12.19 / 20:00</time>
+                            <div>
+                                3 : 1
+                            </div>
+                        </div>
+                        <div class="results__cell">
+                            <time>17.12.19 / 20:00</time>
+                            <div>
+                                3 : 1
+                            </div>
+                        </div>
+                        <div class="results__cell">
+                            <time>17.12.19 / 20:00</time>
+                            <div>
+                                3 : 1
+                            </div>
+                        </div>
+                        <div class="results__cell">
+                            <time>17.12.19 / 20:00</time>
+                            <div>
+                                3 : 1
+                            </div>
+                        </div>
+                        <div class="results__cell">
+                            <time>17.12.19 / 20:00</time>
+                            <div>
+                                3 : 1
+                            </div>
+                        </div>
+                        <div class="results__cell">
+                            <time>17.12.19 / 20:00</time>
+                            <div>
+                                3 : 1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results__title">
+                    <span>Набранные очки:</span> за 1 и 2 тур
+                </div>
+            </div>
+
+    </main>
+  </body>
+</html>
