@@ -20,6 +20,9 @@
         background-color: $primary-green
         color: #ffffff
 
+        .results__cell
+            background-color: $primary-green
+
     &__row
         display: grid
         grid-template-columns: repeat(9, 1fr)
@@ -32,9 +35,18 @@
 
     &__cell
         padding: 15px 0
+        background-color: #fff
         border: 1px solid $green
+        max-height: 47px
         font-size: .625rem
         text-align: center
+        vertical-align: middle
+        cursor: pointer
+
+        &:hover
+            width: 110%
+            max-height: 110%
+            z-index: 3
 
         &_dark
             background-color: $green
@@ -57,5 +69,9 @@
                 width: 0
                 height: 0
                 border-style: solid
-                border-width: 62px 0 0 144px
+                border-width: 47px 0 0 144px
                 border-color: transparent transparent transparent #016330
+
+    &__score
+        font-size: 1rem
+        font-weight: 700
