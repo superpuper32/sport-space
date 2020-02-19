@@ -2,7 +2,7 @@
   @include position(sticky);
   top: -62px;
   z-index: 2;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
 
   &__nav {
     @include position(sticky);
@@ -19,7 +19,7 @@
     }
 
     @media (max-width: 1440px) {
-      padding: 10px 90px;
+      padding: 10px 15px;
     }
   }
 
@@ -28,6 +28,10 @@
     padding: 20px 90px 30px 100px;
     justify-content: space-between;
     background-color: $white;
+
+    @media (max-width: 1440px) {
+      flex-direction: column;
+    }
   }
 
   &__logo {

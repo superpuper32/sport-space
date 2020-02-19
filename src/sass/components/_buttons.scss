@@ -44,13 +44,14 @@
   &__blank {
     padding: 14px 30px;
     background-color: $white;
-    border: none;
+    border: 2px solid $white;
     letter-spacing: 0.02em;
     text-transform: none;
     font-size: 1.125rem;
 
     &:hover {
       box-shadow: none;
+      border: 2px solid $primary;
       color: #000;
     }
 
