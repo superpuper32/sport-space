@@ -19,17 +19,18 @@
     }
 
     @media (max-width: 1440px) {
-      padding: 10px 15px;
+      padding: 20px 30px;
     }
   }
 
   &__login {
     display: flex;
-    padding: 20px 90px 30px 100px;
+    padding: 20px 90px 30px;
     justify-content: space-between;
     background-color: $white;
 
     @media (max-width: 1440px) {
+      padding: 20px 30px 30px;
       flex-direction: column;
     }
   }
@@ -46,6 +47,10 @@
       width: 390px;
     }
 
+    @media (max-width: 1440px) {
+      width: 100%;
+    }
+
     img {
       width: 100%;
       @media (max-width: 1920px) {
@@ -57,5 +62,9 @@
   &__inputs {
     display: inline-block;
     margin: auto 0;
+
+    @media (max-width: 1440px) {
+      text-align: right;
+    }
   }
 }

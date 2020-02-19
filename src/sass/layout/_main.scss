@@ -3,8 +3,8 @@
     padding: 0 90px;
     background-color: $green;
 
-    @media (max-width: 576px) {
-      padding: 0 15px;
+    @media (max-width: 1200px) {
+      padding: 0 30px;
     }
 
     ul {
@@ -35,6 +35,12 @@
 
     @media (max-width: 1440px) {
       font-size: 1.125rem;
+    }
+
+    @media (max-width: 1200px) {
+      width: 33%;
+      text-align: center;
+      font-size: 2rem;
     }
 
     a {

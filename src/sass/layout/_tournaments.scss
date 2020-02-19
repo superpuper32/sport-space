@@ -4,11 +4,24 @@
   justify-content: flex-start;
   padding: 50px 90px;
 
+  @media (max-width: 1200px) {
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   &__aside {
     max-width: 260px;
     padding: 20px 30px;
     border: 2px solid $green-light;
     background-color: $white;
+
+    @media (max-width: 1200px) {
+      margin-bottom: 20px;
+      padding: 30px 50px;
+      border: 3px solid $green-light;
+      max-width: 100%;
+    }
   }
 
   &__kind {
@@ -16,6 +29,10 @@
     font-size: 1.25rem;
     color: $green-light;
     font-weight: 500;
+
+    @media (max-width: 1200px) {
+      font-size: 2rem;
+    }
   }
 
   &__name {
@@ -23,7 +40,13 @@
     font-size: 0.75rem;
     line-height: 1.2;
     text-transform: uppercase;
+    text-decoration: underline;
     color: $green;
+
+    @media (max-width: 1200px) {
+      margin-left: 0;
+      font-size: 1.875rem;
+    }
   }
 
   &__content {
