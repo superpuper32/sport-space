@@ -11,6 +11,9 @@
         line-height: 1.4
         color: #000
 
+        @media (max-width: 1920px)
+            font-size: 2.5rem
+
         span
             color: #B3B3B3
             text-transform: none
@@ -37,11 +40,6 @@
         grid-template-columns: repeat(9, 1fr)
         text-decoration: none
         vertical-align: middle
-
-    &__scores
-        display: grid
-        grid-template-columns: repeat(12, 1fr)
-        text-decoration: none
 
     &__cell
         padding: 8px 0
@@ -77,3 +75,11 @@
         font-size: 1rem
         font-weight: 700
         line-height: 1
+
+    &__scores
+        display: grid
+        grid-template-columns: 2fr 1fr 1fr 130px repeat(4, 1fr) repeat(3, 130px) 120px
+        text-decoration: none
+
+        .results__cell
+            padding: 15px 0
