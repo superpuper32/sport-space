@@ -1,5 +1,5 @@
 .results
-    margin: 0 30px
+    margin: 0 0 0 30px
 
     @media (max-width: 1200px)
         margin: 0
@@ -17,20 +17,26 @@
 
     &__table
         margin-bottom: 45px
-        max-width: 100%
+        width: 100%
         border: 1px solid $green
 
     &__header
-        background-color: $primary-green
         color: #ffffff
 
         .results__cell
+            padding: 15px 0
             background-color: $primary-green
+            color: $white
+            cursor: default
+
+            &:first-child
+                background-color: $green
 
     &__row
         display: grid
         grid-template-columns: repeat(9, 1fr)
         text-decoration: none
+        vertical-align: middle
 
     &__scores
         display: grid
@@ -38,49 +44,36 @@
         text-decoration: none
 
     &__cell
-        padding: 15px 0
+        padding: 8px 0
         background-color: #fff
         border: 1px solid $green
         height: 47px
         font-size: .625rem
         text-align: center
-        vertical-align: middle
+        color: $green
         cursor: pointer
 
-        &:hover
-            display: relative
-            top: -50%
-            left: -50%
-            width: 110%
-            height: 110%
-            background-color: #E0EDDC
-            border: 2px solid $green
-            z-index: 3
-
-        &_dark
-            background-color: $green
-
         &_primary
+            cursor: default
+            padding: 15px 0
             background-color: $primary-green
             color: #ffffff
 
-        &_empty
-            max-width: 100%
-            max-height: 100%
-            text-align: left
+        &_tooltip
             position: relative
 
-            &:after
-                content: ''
-                position: absolute
-                bottom: 0
-                left: 0
-                width: 0
-                height: 0
-                border-style: solid
-                border-width: 47px 0 0 144px
-                border-color: transparent transparent transparent #016330
+            .tooltip-results
+                display: none
+
+            &:hover
+                .tooltip-results
+                    display: block
+
+    &__time
+        line-height: 1
 
     &__score
+        display: block
         font-size: 1rem
         font-weight: 700
+        line-height: 1

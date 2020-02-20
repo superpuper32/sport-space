@@ -11,7 +11,7 @@
   }
 
   &__aside {
-    max-width: 260px;
+    position: relative;
     padding: 20px 30px;
     border: 2px solid $green-light;
     background-color: $white;
@@ -20,17 +20,31 @@
       margin-bottom: 20px;
       padding: 30px 50px;
       border: 3px solid $green-light;
-      max-width: 100%;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 5;
+        left: 50%;
+        transform: translate(-50%);
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 40px 0 40px;
+        border-color: #9bba1f transparent transparent transparent;
+      }
     }
   }
 
   &__kind {
+    width: 196px;
     text-align: left;
     font-size: 1.25rem;
     color: $green-light;
     font-weight: 500;
 
     @media (max-width: 1200px) {
+      width: 100%;
       font-size: 2rem;
     }
   }
