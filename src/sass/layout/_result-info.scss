@@ -1,5 +1,5 @@
 .result-info {
-  margin-top: 60px;
+  margin: 60px 0;
 
   &__scores {
     display: flex;
@@ -9,7 +9,7 @@
     text-align: center;
   }
 
-  &__team {
+  &__team-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,5 +25,44 @@
     time {
       font-size: 1rem;
     }
+  }
+
+  &__judge {
+    font-size: 1rem;
+
+    span {
+      font-weight: normal;
+    }
+  }
+
+  &__mark {
+    margin-bottom: 15px;
+    font-size: 1rem;
+
+    span {
+      font-weight: normal;
+    }
+  }
+
+  &__games {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__game {
+    padding: 0 20px;
+    font-size: 1rem;
+    border-left: 1px solid $green;
+    border-right: 1px solid $green;
+    span {
+      font-weight: normal;
+    }
+  }
+
+  &__team {
+    margin: 0 15px;
+    height: 126px;
+    background-color: gray;
   }
 }
