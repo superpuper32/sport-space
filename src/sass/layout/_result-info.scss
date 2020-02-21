@@ -1,0 +1,29 @@
+.result-info {
+  margin-top: 60px;
+
+  &__scores {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: $green;
+    text-align: center;
+  }
+
+  &__team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__score {
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+    font-size: 5rem;
+    font-weight: bold;
+
+    time {
+      font-size: 1rem;
+    }
+  }
+}

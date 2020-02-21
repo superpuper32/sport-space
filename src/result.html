@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🏆Tournaments</title>
+    <meta charset="utf-8" />
+    <script src="result.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link"><a href="/">О нас</a></li>
+            <li class="nav__link"><a href="./teams.html">Команды</a></li>
+            <li class="nav__link"><a href="/">Подбор тренера</a></li>
+            <li class="nav__link"><a href="./playgrounds.html">Площадки</a></li>
+            <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
+            <li class="nav__link"><a href="/">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <form class="nav__form">
+          <input
+            class="nav__input"
+            type="text"
+            list="sports"
+            placeholder="Вид спорта"
+            name="sport_cat"
+            value=""
+          />
+
+          <datalist id="sports">
+            <option value="Все виды">Все виды</option>
+            <option value="Волейбол">Волейбол</option>
+          </datalist>
+        </form>
+      </div>
+
+      <div class="header__login">
+        <a href="/" class="header__logo">
+          <img src="./assets/images/logo_main.png" alt="logo" />
+        </a>
+
+        <form class="header__inputs">
+          <input
+            type="email"
+            class="form__header"
+            id="header__email"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            class="form__header"
+            id="header__password"
+            name="password"
+            placeholder="Пароль"
+            autocomplete="off"
+            required
+          />
+
+          <div class="btn btn__form">
+            Войти
+          </div>
+
+          <a href="/registration.html" class="btn btn__blank">
+            Регистрация
+          </a>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <nav class="main__nav">
+        <ul class="main__links">
+          <li class="main__link">
+            <a href="/tournaments.html">Турниры</a>
+          </li class="main__link">
+      
+          <li class="main__link main__link_active">
+            <a href="/results">Результаты</a>
+          </li>
+      
+          <li class="main__link">
+            <a href="/winners">Победители</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="result-info">
+        <div class="container">
+          <div class="result-info__scores">
+            <div class="result-info__team">
+              Команда А
+              <img src="./assets/images/team_a.jpeg" alt="">
+              Лучший игрок команды
+            </div>
+
+            <div class="result-info__score">
+              <time>28/09/2019 20:00</time>
+              3 : 1
+            </div>
+
+            <div class="result-info__team">
+              Команда Б
+              <img src="./assets/images/team_b.jpg" alt="">
+              Лучший игрок команды:
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
