@@ -1,0 +1,26 @@
+.team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    margin-bottom: 12px;
+    font-size: 1.375rem;
+    font-weight: 600;
+    line-height: 1;
+    color: $primary-green;
+  }
+
+  &__logo {
+    margin-bottom: 20px;
+    padding-top: 165px;
+    background: url(./assets/images/team_a.jpeg) no-repeat center center;
+    background-size: cover;
+  }
+
+  &__player {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $green;
+  }
+}
