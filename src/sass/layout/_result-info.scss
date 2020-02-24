@@ -9,29 +9,34 @@
     color: $green;
   }
 
-  &__team-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   &__score {
+    margin: 0 15px;
     display: flex;
     flex-direction: column;
-    margin: 0 60px;
-    font-size: 5rem;
-    font-weight: bold;
+    text-align: center;
 
     time {
-      font-size: 1rem;
+      margin-bottom: 15px;
+      font-size: 1.375rem;
+      font-weight: 600;
+      line-height: 1;
     }
   }
 
-  &__judge {
+  &__title {
+    margin-bottom: 15px;
+    font-size: 10rem;
+    font-weight: 600;
+    line-height: 128px;
+    letter-spacing: -0.12em;
+  }
+
+  &__content {
+    margin-bottom: 5px;
     font-size: 1rem;
 
     span {
-      font-weight: normal;
+      font-weight: 600;
     }
   }
 
@@ -52,11 +57,20 @@
 
   &__game {
     padding: 0 20px;
-    font-size: 1rem;
+    font-size: 0.875rem;
     border-left: 1px solid $green;
     border-right: 1px solid $green;
-    span {
-      font-weight: normal;
+
+    &:first-child {
+      border-left: 2px solid $green;
+    }
+
+    &:last-child {
+      border-right: 2px solid $green;
+    }
+
+    div {
+      font-weight: 600;
     }
   }
 
