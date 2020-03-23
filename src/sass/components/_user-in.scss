@@ -9,31 +9,41 @@
     background-color: $primary-green;
     border: 3px solid $primary;
     border-radius: 50%;
+    overflow: hidden;
 
     img {
       width: 84px;
     }
   }
 
-  &__title {
+  &__menu {
     margin-top: 30px;
     font-size: 1.875rem;
     line-height: 1;
     letter-spacing: -0.01em;
     text-transform: uppercase;
 
-    &:after {
-      content: "";
-      top: 0;
-      left: 0;
-    }
-
     span {
+      position: relative;
       margin-right: 50px;
       cursor: pointer;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: -45px;
+        width: 40px;
+        height: 40px;
+        background: url("./assets/images/arrow_user-in.svg") center center
+          no-repeat;
+        transform: rotate(90deg);
+        transition: rotate 0.3s;
+      }
     }
 
     ul {
+      display: none;
       position: absolute;
       margin-top: 20px;
       padding: 25px 30px 0;
@@ -46,6 +56,16 @@
         list-style: none;
         color: $green;
       }
+    }
+  }
+
+  .open {
+    span:after {
+      transform: rotate(0deg);
+    }
+
+    ul {
+      display: block;
     }
   }
 }
