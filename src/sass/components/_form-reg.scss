@@ -3,22 +3,33 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-  }
 
-  label {
-    color: $primary-green;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-  }
-
-  input {
-    border: 2px solid $primary-green;
-    height: 60px;
-    vertical-align: middle;
-
-    &[type="radio"] {
-      color: $green;
-      border: 1px solid $primary-green;
+    label {
+      color: $primary-green;
+      text-transform: uppercase;
+      margin-bottom: 15px;
     }
+
+    input {
+      border: 2px solid $primary-green;
+      height: 60px;
+      vertical-align: middle;
+
+      &[type="radio"] {
+        width: 16px;
+        height: 16px;
+        border: 2px solid $primary-green;
+        color: $green;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    color: $primary-green;
   }
 }

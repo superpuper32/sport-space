@@ -174,9 +174,18 @@
 
   &__reg {
     width: 100%;
-    background-color: $primary-green;
     border: 2px solid $primary-green;
-    color: $white;
+    font-size: 1.625rem;
+
+    &_light {
+      background-color: $white;
+      color: $primary-green;
+    }
+
+    &_dark {
+      background-color: $primary-green;
+      color: $white;
+    }
 
     &:hover {
       color: $white;

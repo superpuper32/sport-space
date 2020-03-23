@@ -1,0 +1,51 @@
+.user-in {
+  display: flex;
+  flex-direction: row;
+
+  &__avatar {
+    margin-right: 30px;
+    width: 90px;
+    height: 90px;
+    background-color: $primary-green;
+    border: 3px solid $primary;
+    border-radius: 50%;
+
+    img {
+      width: 84px;
+    }
+  }
+
+  &__title {
+    margin-top: 30px;
+    font-size: 1.875rem;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+
+    &:after {
+      content: "";
+      top: 0;
+      left: 0;
+    }
+
+    span {
+      margin-right: 50px;
+      cursor: pointer;
+    }
+
+    ul {
+      position: absolute;
+      margin-top: 20px;
+      padding: 25px 30px 0;
+      border: 1px solid $green;
+      background-color: $white;
+
+      li {
+        margin-bottom: 25px;
+        font-size: 1.125rem;
+        list-style: none;
+        color: $green;
+      }
+    }
+  }
+}

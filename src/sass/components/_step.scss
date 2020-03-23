@@ -4,33 +4,34 @@
   &__img {
     width: 100%;
     height: 160px;
-    @include background-size(cover);
+    background-repeat: no-repeat;
+    background-position: center;
 
     &_reg {
-      background: url(./assets/images/reg_icon.svg) no-repeat center center;
+      background-image: url(./assets/images/reg_icon.svg);
     }
 
     &_head {
-      background: url(./assets/images/head_icon.svg) no-repeat center center;
+      background-image: url(./assets/images/head_icon.svg);
     }
 
     &_field {
-      background: url(./assets/images/field_icon.svg) no-repeat center center;
+      background-image: url(./assets/images/field_icon.svg);
     }
 
     &_takepart {
-      background: url(./assets/images/takepart_icon.svg) no-repeat center center;
+      background-image: url(./assets/images/takepart_icon.svg);
     }
 
     &_cup {
-      background: url(./assets/images/cup_icon.png) no-repeat center center;
+      background-image: url(./assets/images/cup_icon.png);
     }
 
     &_trophy {
-      background: url(./assets/images/trophy_icon.svg) no-repeat center center;
+      background-image: url(./assets/images/trophy_icon.svg);
     }
   }
-    
+
   &__title {
     font-size: 1.5rem;
     line-height: 1.3;
