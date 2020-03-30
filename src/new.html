@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <meta charset="utf-8" />
+    <script src="../pages/registration/registration.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__links">
+            <li class="nav__link"><a href="/">О нас</a></li>
+            <li class="nav__link"><a href="/">Команды</a></li>
+            <li class="nav__link"><a href="/">Подбор тренера</a></li>
+            <li class="nav__link"><a href="./playgrounds.html">Площадки</a></li>
+            <li class="nav__link"><a href="./tournaments.html">Турниры</a></li>
+            <li class="nav__link"><a href="/">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <form class="nav__form">
+          <input
+            class="nav__input"
+            type="text"
+            list="sports"
+            placeholder="Вид спорта"
+            name="sport_cat"
+            value=""
+          />
+
+          <datalist id="sports">
+            <option value="Все виды">Все виды</option>
+            <option value="Волейбол">Волейбол</option>
+          </datalist>
+        </form>
+      </div>
+
+      <div class="header__login">
+        <a href="/" class="header__logo">
+          <img src="./assets/images/logo_main.png" alt="logo" />
+        </a>
+
+        <form class="header__inputs">
+          <div class="btn btn__form">
+            Войти
+          </div>
+
+          <a href="/registration.html" class="btn btn__blank">
+            Регистрация
+          </a>
+        </form>
+
+        <div class="header__sign-in user-in">
+          <div class="user-in__avatar">
+            <img src="./assets/images/default_avatar.svg" alt="avatar" />
+          </div>
+
+          <div class="user-in__menu">
+            <span class="user-in__title">Иван Иванов</span>
+            <ul>
+              <li>Настройки профиля</li>
+              <li>Выйти</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <nav class="main__nav">
+        <ul class="main__links">
+          <li class="main__link"><a href="/">Портал</a></li>
+          <li class="main__link main__link_active"><a href="#">Новости</a></li>
+          <li class="main__link"><a href="#">Высшая цель</a></li>
+        </ul>
+      </nav>
+
+      <section class="new-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="new-page__card">
+                <img src="./assets/images/new-page.jpg" alt="" />
+
+                <h2 class="new-page__title">
+                  Здесь вы сможете найти подходящий вам вид спорта и место где
+                  начать тренировки, обрести новых знакомых и друзей
+                </h2>
+
+                <p class="new-page__content">
+                  В Краснодарском крае стартовал 10-й сезон турниров по пляжному
+                  волейболу. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Sequi doloribus quam laboriosam asperiores praesentium
+                  molestiae culpa esse? Est, assumenda deleniti pariatur nobis
+                  dolorem, ipsa laborum natus doloremque inventore earum
+                  autem.Harum, repudiandae? Atque nihil perferendis dolorem
+                  minima ipsam illo nostrum soluta hic quasi, deserunt, tenetur
+                  cumque, veniam tempore. Nam dolore nemo commodi praesentium et
+                  quod? Ab minus praesentium odio. Nisi.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                  iste qui illo unde sed ipsa illum delectus facilis ut debitis
+                  facere libero quasi inventore. Qui aspernatur laudantium
+                  consequuntur ad unde?Facilis possimus nisi tempore, quis
+                  dignissimos esse nam consequatur nesciunt ipsam porro ducimus
+                  repellendus corporis labore. Dolorum voluptatem, similique
+                  tempora alias, modi rerum harum nam illum nisi blanditiis
+                  impedit in?
+                </p>
+
+                <time class="new-page__date">12 февраля 2020 года</time>
+
+                <a href="#" class="new-page__link"
+                  >Вернуться к остальным новостям</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.new-page {
+  margin: 50px 0;
+
+  img {
+    margin-bottom: 50px;
+  }
+
+  &__card {
+    color: $green;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  &__content {
+    font-size: 0.875rem;
+  }
+
+  &__date {
+    display: block;
+    font-size: 0.75rem;
+    color: #bfbfbf;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    color: $green;
+  }
+}
