@@ -6,13 +6,20 @@
     margin-right: 30px;
     width: 90px;
     height: 90px;
-    background-color: $primary-green;
-    border: 3px solid $primary;
     border-radius: 50%;
     overflow: hidden;
 
+    @media (max-width: 1919px) {
+      width: 70px;
+      height: 70px;
+    }
+
     img {
-      width: 84px;
+      width: 90px;
+
+      @media (max-width: 1919px) {
+        width: 70px;
+      }
     }
   }
 
@@ -22,6 +29,10 @@
     line-height: 1;
     letter-spacing: -0.01em;
     text-transform: uppercase;
+
+    @media (max-width: 1919px) {
+      margin-top: 20px;
+    }
 
     span {
       position: relative;
