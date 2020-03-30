@@ -1,0 +1,35 @@
+.news-page {
+  margin: 60px 0 0;
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  &__card {
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: $green;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    font-size: 0.75rem;
+    color: $green;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__time {
+    align-self: flex-end;
+    font-size: 0.625rem;
+    color: #c8c8c8;
+  }
+}
